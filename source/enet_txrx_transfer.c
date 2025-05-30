@@ -35,7 +35,7 @@
 #define ENET_TXBD_NUM          (4)
 #define ENET_RXBUFF_SIZE       (ENET_FRAME_MAX_FRAMELEN)
 #define ENET_TXBUFF_SIZE       (ENET_FRAME_MAX_FRAMELEN)
-#define ENET_DATA_LENGTH       (1000)
+#define ENET_DATA_LENGTH       (60)
 #define ENET_TRANSMIT_DATA_NUM (20)
 #ifndef APP_ENET_BUFF_ALIGNMENT
 #define APP_ENET_BUFF_ALIGNMENT ENET_BUFF_ALIGNMENT
@@ -52,6 +52,8 @@
 #ifndef MAC_ADDRESS
 #define MAC_ADDRESS {0xd4, 0xbe, 0xd9, 0x45, 0x22, 0x60}
 #endif
+
+#define DEST_MAC_ADDR {0x10,0x62,0xe5,0xe1,0x01,0x06};
 
 /*******************************************************************************
  * Prototypes
@@ -80,6 +82,11 @@ uint8_t g_frame[ENET_DATA_LENGTH + 14];
 
 /*! @brief The MAC address for ENET device. */
 uint8_t g_macAddr[6] = MAC_ADDRESS;
+uint8_t g_mac_destAddr[6] = DEST_MAC_ADDR;
+uint8_t g_data_frame[] = "Kenneth Eduardo Castillo Garcia";
+
+uint8_t g_rx_src_mac[6] = {0};
+
 
 /*! @brief Enet PHY and MDIO interface handler. */
 static mdio_handle_t mdioHandle = {.ops = &EXAMPLE_MDIO_OPS};
@@ -94,18 +101,22 @@ static void ENET_BuildBroadCastFrame(void)
     uint32_t count  = 0;
     uint32_t length = ENET_DATA_LENGTH - 14;
 
-    for (count = 0; count < 6U; count++)
-    {
-        g_frame[count] = 0xFFU;
-    }
+//    for (count = 0; count < 6U; count++)
+//    {
+//        g_frame[count] = 0xFFU;
+//    }
+    memcpy(&g_frame[0], &g_mac_destAddr[0], 6U);
+
     memcpy(&g_frame[6], &g_macAddr[0], 6U);
     g_frame[12] = (length >> 8) & 0xFFU;
     g_frame[13] = length & 0xFFU;
 
-    for (count = 0; count < length; count++)
-    {
-        g_frame[count + 14] = count % 0xFFU;
-    }
+//    for (count = 0; count < length; count++)
+//    {
+//        g_frame[count + 14] = count % 0xFFU;
+//    }
+
+    memcpy(&g_frame[14], &g_data_frame[0], 32U);
 }
 
 /*!
@@ -227,10 +238,26 @@ int main(void)
             status        = ENET_ReadFrame(EXAMPLE_ENET, &g_handle, data, length, 0, NULL);
             if (status == kStatus_Success)
             {
-                PRINTF(" A frame received. the length %d ", length);
-                PRINTF(" Dest Address %02x:%02x:%02x:%02x:%02x:%02x Src Address %02x:%02x:%02x:%02x:%02x:%02x \r\n",
-                       data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8], data[9],
-                       data[10], data[11]);
+            	uint8_t equal = false;
+                memcpy(&g_rx_src_mac[0], &data[0], 6U);
+                for (uint8_t i = 0; i < 6; ++i) {
+                	if(g_rx_src_mac[i] == g_macAddr[i]){
+                		equal = true;
+                	}
+                	else{
+                		equal = false;
+                		break;
+                	}
+				}
+                if(equal){
+                	PRINTF(" A frame received. the length %d ", length);
+					PRINTF(" Dest Address %02x:%02x:%02x:%02x:%02x:%02x Src Address %02x:%02x:%02x:%02x:%02x:%02x \r\n",
+						   data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8], data[9],
+						   data[10], data[11]);
+                }
+                else{
+                	PRINTF(" MAC ADDRES NOT K66\r\n");
+                }
             }
             free(data);
         }
