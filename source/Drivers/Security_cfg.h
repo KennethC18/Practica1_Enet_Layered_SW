@@ -8,7 +8,8 @@
 #ifndef DRIVERS_SECURITY_CFG_H_
 #define DRIVERS_SECURITY_CFG_H_
 
-#define AES128_IV 0x55
-#define AES128_KEY 0xAA
+#define AES128_IV "My16byteIV000000"
+
+#define AES128_KEY "My16byteKey00000"
 
 #endif /* DRIVERS_SECURITY_CFG_H_ */

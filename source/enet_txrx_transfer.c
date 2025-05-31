@@ -292,3 +292,23 @@ int main(void)
         }
     }
 }
+
+
+//#include "Drivers/Security.h"
+//
+//uint8_t buffer1[32] = "No todo lo que es oro reluce...";
+//
+//uint8_t buffer2[32];
+//uint8_t buffer3[32];
+//
+//int main (void){
+//	Security_init();
+//	buffer1[31] = '0';
+//
+//	Security_send(buffer1, buffer2);
+//
+//	Security_receive(buffer2, buffer3);
+//
+//	while(1);
+//}
+

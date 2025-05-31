@@ -1,3 +1,3 @@
-../source/Drivers/Security.c:9:6:Security_init	4	static
-../source/Drivers/Security.c:15:6:Security_send	4	static
-../source/Drivers/Security.c:19:6:Security_receive	4	static
+../source/Drivers/Security.c:11:6:Security_init	8	static
+../source/Drivers/Security.c:15:6:Security_send	16	static
+../source/Drivers/Security.c:23:6:Security_receive	16	static
