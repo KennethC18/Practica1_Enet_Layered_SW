@@ -12,6 +12,6 @@
 
 void CRC32_Init(uint32_t seed);
 
-uint32_t CRC32_GetChecksum(uint8_t* data, size_t dataSize);
+uint32_t CRC32_GetChecksum(uint32_t seed, uint8_t* data, size_t dataSize);
 
 #endif /* CRC_H_ */

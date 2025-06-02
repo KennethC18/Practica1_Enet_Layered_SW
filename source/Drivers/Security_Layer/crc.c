@@ -29,7 +29,8 @@ void CRC32_Init(uint32_t seed){
 	CRC_Init(CRC0, &config);
 }
 
-uint32_t CRC32_GetChecksum(uint8_t *data, size_t dataSize){
+uint32_t CRC32_GetChecksum(uint32_t seed, uint8_t *data, size_t dataSize){
+	CRC32_Init(seed);
     CRC_WriteData(CRC0, (uint8_t *)&data[0], dataSize);
     return CRC_Get32bitResult(CRC0);
 }

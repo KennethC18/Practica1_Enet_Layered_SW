@@ -306,6 +306,8 @@ uint32_t checksum;
 
 uint8_t ethbuffer[36];
 
+uint8_t buffer4[32];
+
 int main (void){
 	Security_init();
 	Ethernet_Init();
@@ -317,6 +319,10 @@ int main (void){
 	Security_Decrypt(buffer2, buffer3);
 
 	Security_AddChecksum(buffer3, ethbuffer);
+
+	Ethernet_TX(ethbuffer);
+
+	Security_ValidChecksum(ethbuffer, buffer4);
 
 	while(1);
 }

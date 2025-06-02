@@ -30,14 +30,36 @@ void Security_Decrypt(uint8_t* in_buffer, uint8_t* out_buffer){
 }
 
 void Security_AddChecksum(uint8_t* in_buffer, uint8_t* out_buffer){
-	uint32_t checksum;
+	uint32_t checksum = 0;
 
 	memcpy(out_buffer, in_buffer, BUFFER_SIZE);
 
-	checksum = CRC32_GetChecksum(in_buffer, BUFFER_SIZE);
+	checksum = CRC32_GetChecksum(CRC32_SEED, in_buffer, BUFFER_SIZE);
 
 	for (uint8_t i = BUFFER_SIZE; i < (BUFFER_SIZE + 4); ++i) {
 		out_buffer[i] = (uint8_t)(checksum >> (8 * (i - BUFFER_SIZE)) & (0xFF));
 	}
 }
 
+bool Security_ValidChecksum(uint8_t* in_buffer, uint8_t* out_buffer){
+	bool retval = false;
+	uint32_t rx_checksum = 0;
+	uint32_t real_checksum = 0;
+
+	memcpy(out_buffer, in_buffer, BUFFER_SIZE);
+
+	real_checksum = CRC32_GetChecksum(CRC32_SEED, out_buffer, BUFFER_SIZE);
+
+	for (uint8_t i = BUFFER_SIZE; i < (BUFFER_SIZE + 4); ++i) {
+		rx_checksum |= (uint32_t)(in_buffer[i] << (8 * (i - BUFFER_SIZE)));
+	}
+
+	if (rx_checksum == real_checksum){
+		retval = true;
+	}
+	else{
+		retval = false;
+	}
+
+	return retval;
+}
