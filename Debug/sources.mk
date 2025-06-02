@@ -21,7 +21,8 @@ device \
 drivers \
 mdio \
 phy \
-source/Drivers \
+source/Drivers/Ethernet_Layer \
+source/Drivers/Security_Layer \
 source \
 startup \
 utilities \

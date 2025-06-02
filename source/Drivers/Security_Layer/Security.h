@@ -8,9 +8,9 @@
 #ifndef DRIVERS_SECURITY_H_
 #define DRIVERS_SECURITY_H_
 
-#include "aes.h"
-#include "crc.h"
-#include "Security_cfg.h"
+#include <Drivers/Security_Layer/aes.h>
+#include <Drivers/Security_Layer/crc.h>
+#include <Drivers/Security_Layer/Security_cfg.h>
 #include "string.h"
 
 void Security_init();

@@ -5,8 +5,7 @@
  *      Author: kenne
  */
 
-#include "enet.h"
-
+#include <Drivers/Ethernet_Layer/enet.h>
 #include "fsl_enet.h"
 #include "fsl_phy.h"
 #include "fsl_enet_mdio.h"

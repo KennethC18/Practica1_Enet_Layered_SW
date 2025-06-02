@@ -1,0 +1,4 @@
+../source/Drivers/Security/Security.c:11:6:Security_init	8	static
+../source/Drivers/Security/Security.c:16:6:Security_Encrypt	16	static
+../source/Drivers/Security/Security.c:24:6:Security_Decrypt	16	static
+../source/Drivers/Security/Security.c:32:6:Security_MakeChecksum	16	static

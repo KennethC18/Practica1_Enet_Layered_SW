@@ -5,7 +5,7 @@
  *      Author: kenne
  */
 
-#include "crc.h"
+#include <Drivers/Security_Layer/crc.h>
 
 /*!
  * @brief      Init for CRC-32.

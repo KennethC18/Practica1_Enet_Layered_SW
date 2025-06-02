@@ -10,7 +10,8 @@ RM := rm -rf
 -include sources.mk
 -include utilities/subdir.mk
 -include startup/subdir.mk
--include source/Drivers/subdir.mk
+-include source/Drivers/Security_Layer/subdir.mk
+-include source/Drivers/Ethernet_Layer/subdir.mk
 -include source/subdir.mk
 -include phy/subdir.mk
 -include mdio/subdir.mk

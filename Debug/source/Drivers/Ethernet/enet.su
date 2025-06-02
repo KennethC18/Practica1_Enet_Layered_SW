@@ -1,0 +1,16 @@
+C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_clock.h:725:20:CLOCK_EnableClock	24	static
+C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_clock.h:777:20:CLOCK_SetRmii0Clock	16	static
+C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_enet.h:1187:20:ENET_ActiveRead	16	static
+C:\Redes\Practica1_Enet_Layered_SW\phy/fsl_phy.h:147:24:PHY_Init	16	static
+C:\Redes\Practica1_Enet_Layered_SW\phy/fsl_phy.h:191:24:PHY_GetAutoNegotiationStatus	16	static
+C:\Redes\Practica1_Enet_Layered_SW\phy/fsl_phy.h:206:24:PHY_GetLinkStatus	16	static
+C:\Redes\Practica1_Enet_Layered_SW\phy/fsl_phy.h:223:24:PHY_GetLinkSpeedDuplex	24	static
+C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_sysmpu.h:268:20:SYSMPU_Enable	16	static
+C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_port.h:271:20:PORT_SetPinConfig	32	static
+C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_port.h:374:20:PORT_SetPinMux	24	static
+../source/Drivers/Ethernet/enet.c:59:13:ENET_ConfigPins	16	static
+../source/Drivers/Ethernet/enet.c:120:13:ENET_ConfigPHYLink	16	static
+../source/Drivers/Ethernet/enet.c:148:13:ENET_BuildBroadCastFrame	32	static
+../source/Drivers/Ethernet/enet.c:160:10:ENET_Config	104	static
+../source/Drivers/Ethernet/enet.c:218:10:ENET_Tx	40	static
+../source/Drivers/Ethernet/enet.c:240:10:ENET_Rx	40	static

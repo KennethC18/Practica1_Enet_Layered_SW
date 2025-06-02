@@ -7,7 +7,7 @@ C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.
 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(memset.o)
                               ./drivers/fsl_crc.o (memset)
 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(alloc.o)
-                              ./source/Drivers/enet.o (malloc)
+                              ./source/Drivers/Ethernet_Layer/enet.o (malloc)
 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(initio.o)
                               C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(_cr__main.o) (_initio)
 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(setvbuf.o)
@@ -159,231 +159,247 @@ Discarded input sections
  .data          0x00000000        0x0 ./startup/startup_mk66f18.o
  .bss           0x00000000        0x0 ./startup/startup_mk66f18.o
  .debug_macro   0x00000000      0xb0e ./startup/startup_mk66f18.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/Security.o
- .text          0x00000000        0x0 ./source/Drivers/Security.o
- .data          0x00000000        0x0 ./source/Drivers/Security.o
- .bss           0x00000000        0x0 ./source/Drivers/Security.o
- .debug_macro   0x00000000      0xb0e ./source/Drivers/Security.o
- .debug_macro   0x00000000       0x10 ./source/Drivers/Security.o
- .debug_macro   0x00000000      0x12e ./source/Drivers/Security.o
- .debug_macro   0x00000000      0x5b3 ./source/Drivers/Security.o
- .debug_macro   0x00000000       0x16 ./source/Drivers/Security.o
- .debug_macro   0x00000000       0x22 ./source/Drivers/Security.o
- .debug_macro   0x00000000       0x10 ./source/Drivers/Security.o
- .debug_macro   0x00000000       0x56 ./source/Drivers/Security.o
- .debug_macro   0x00000000       0x1c ./source/Drivers/Security.o
- .debug_macro   0x00000000       0x22 ./source/Drivers/Security.o
- .debug_macro   0x00000000       0xfb ./source/Drivers/Security.o
- .debug_macro   0x00000000      0xeeb ./source/Drivers/Security.o
- .debug_macro   0x00000000       0x40 ./source/Drivers/Security.o
- .debug_macro   0x00000000    0x1626f ./source/Drivers/Security.o
- .debug_macro   0x00000000     0x14b0 ./source/Drivers/Security.o
- .debug_macro   0x00000000       0x7a ./source/Drivers/Security.o
- .debug_macro   0x00000000       0xaf ./source/Drivers/Security.o
- .debug_macro   0x00000000      0x190 ./source/Drivers/Security.o
- .group         0x00000000        0xc ./source/Drivers/aes.o
- .group         0x00000000        0xc ./source/Drivers/aes.o
- .group         0x00000000        0xc ./source/Drivers/aes.o
- .group         0x00000000        0xc ./source/Drivers/aes.o
- .group         0x00000000        0xc ./source/Drivers/aes.o
- .group         0x00000000        0xc ./source/Drivers/aes.o
- .text          0x00000000        0x0 ./source/Drivers/aes.o
- .data          0x00000000        0x0 ./source/Drivers/aes.o
- .bss           0x00000000        0x0 ./source/Drivers/aes.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/Security.o
+ .text          0x00000000        0x0 ./source/Drivers/Security_Layer/Security.o
+ .data          0x00000000        0x0 ./source/Drivers/Security_Layer/Security.o
+ .bss           0x00000000        0x0 ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000      0xb0e ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000       0x10 ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000      0x12e ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000      0x5b3 ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000       0x16 ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000       0x22 ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000       0x10 ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000       0x56 ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000       0x1c ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000       0x22 ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000       0xfb ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000      0xeeb ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000       0x40 ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000    0x1626f ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000     0x14b0 ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000       0x7a ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000       0xaf ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x00000000      0x190 ./source/Drivers/Security_Layer/Security.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/aes.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/aes.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/aes.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/aes.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/aes.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/aes.o
+ .text          0x00000000        0x0 ./source/Drivers/Security_Layer/aes.o
+ .data          0x00000000        0x0 ./source/Drivers/Security_Layer/aes.o
+ .bss           0x00000000        0x0 ./source/Drivers/Security_Layer/aes.o
  .text.AES_init_ctx
-                0x00000000       0x1c ./source/Drivers/aes.o
+                0x00000000       0x1c ./source/Drivers/Security_Layer/aes.o
  .text.AES_ECB_encrypt
-                0x00000000       0x1c ./source/Drivers/aes.o
+                0x00000000       0x1c ./source/Drivers/Security_Layer/aes.o
  .text.AES_ECB_decrypt
-                0x00000000       0x1c ./source/Drivers/aes.o
+                0x00000000       0x1c ./source/Drivers/Security_Layer/aes.o
  .text.AES_CTR_xcrypt_buffer
-                0x00000000       0xc6 ./source/Drivers/aes.o
- .debug_macro   0x00000000      0xb0e ./source/Drivers/aes.o
- .debug_macro   0x00000000       0x10 ./source/Drivers/aes.o
- .debug_macro   0x00000000      0x12e ./source/Drivers/aes.o
- .debug_macro   0x00000000      0x5b3 ./source/Drivers/aes.o
- .debug_macro   0x00000000       0x2e ./source/Drivers/aes.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/crc.o
- .text          0x00000000        0x0 ./source/Drivers/crc.o
- .data          0x00000000        0x0 ./source/Drivers/crc.o
- .bss           0x00000000        0x0 ./source/Drivers/crc.o
- .debug_macro   0x00000000      0xb0e ./source/Drivers/crc.o
- .debug_macro   0x00000000       0x10 ./source/Drivers/crc.o
- .debug_macro   0x00000000       0x1c ./source/Drivers/crc.o
- .debug_macro   0x00000000       0x22 ./source/Drivers/crc.o
- .debug_macro   0x00000000      0x12e ./source/Drivers/crc.o
- .debug_macro   0x00000000      0x5b3 ./source/Drivers/crc.o
- .debug_macro   0x00000000       0x22 ./source/Drivers/crc.o
- .debug_macro   0x00000000       0x10 ./source/Drivers/crc.o
- .debug_macro   0x00000000       0x56 ./source/Drivers/crc.o
- .debug_macro   0x00000000       0x1c ./source/Drivers/crc.o
- .debug_macro   0x00000000       0x22 ./source/Drivers/crc.o
- .debug_macro   0x00000000       0xfb ./source/Drivers/crc.o
- .debug_macro   0x00000000      0xeeb ./source/Drivers/crc.o
- .debug_macro   0x00000000       0x40 ./source/Drivers/crc.o
- .debug_macro   0x00000000    0x1626f ./source/Drivers/crc.o
- .debug_macro   0x00000000     0x14b0 ./source/Drivers/crc.o
- .debug_macro   0x00000000       0x7a ./source/Drivers/crc.o
- .debug_macro   0x00000000       0xaf ./source/Drivers/crc.o
- .debug_macro   0x00000000      0x190 ./source/Drivers/crc.o
- .debug_macro   0x00000000       0x10 ./source/Drivers/crc.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .group         0x00000000        0xc ./source/Drivers/enet.o
- .text          0x00000000        0x0 ./source/Drivers/enet.o
- .data          0x00000000        0x0 ./source/Drivers/enet.o
- .bss           0x00000000        0x0 ./source/Drivers/enet.o
- .text.CLOCK_EnableClock
-                0x00000000       0x34 ./source/Drivers/enet.o
- .text.CLOCK_SetRmii0Clock
-                0x00000000       0x38 ./source/Drivers/enet.o
- .text.ENET_ActiveRead
-                0x00000000       0x1c ./source/Drivers/enet.o
- .text.PHY_Init
-                0x00000000       0x20 ./source/Drivers/enet.o
- .text.PHY_GetAutoNegotiationStatus
-                0x00000000       0x20 ./source/Drivers/enet.o
- .text.PHY_GetLinkStatus
-                0x00000000       0x20 ./source/Drivers/enet.o
- .text.PHY_GetLinkSpeedDuplex
-                0x00000000       0x24 ./source/Drivers/enet.o
- .text.SYSMPU_Enable
-                0x00000000       0x38 ./source/Drivers/enet.o
- .rodata.PORT_SetPinConfig.str1.4
-                0x00000000       0x43 ./source/Drivers/enet.o
- .text.PORT_SetPinConfig
-                0x00000000       0x38 ./source/Drivers/enet.o
- .text.PORT_SetPinMux
-                0x00000000       0x3a ./source/Drivers/enet.o
- NonCacheable   0x00000000       0x40 ./source/Drivers/enet.o
- .bss.g_rxDataBuff
-                0x00000000     0x17c0 ./source/Drivers/enet.o
- .bss.g_txDataBuff
-                0x00000000     0x17c0 ./source/Drivers/enet.o
- .bss.g_handle  0x00000000       0x84 ./source/Drivers/enet.o
- .bss.g_frame   0x00000000       0x4a ./source/Drivers/enet.o
- .data.mdioHandle
-                0x00000000        0xc ./source/Drivers/enet.o
- .data.phyHandle
-                0x00000000        0xc ./source/Drivers/enet.o
- .bss.status    0x00000000        0x4 ./source/Drivers/enet.o
- .bss.phyConfig
-                0x00000000        0x8 ./source/Drivers/enet.o
- .bss.speed     0x00000000        0x1 ./source/Drivers/enet.o
- .bss.duplex    0x00000000        0x1 ./source/Drivers/enet.o
- .bss.link      0x00000000        0x1 ./source/Drivers/enet.o
- .bss.eErrStatic
-                0x00000000       0x14 ./source/Drivers/enet.o
- .bss.length    0x00000000        0x4 ./source/Drivers/enet.o
- .text.ENET_ConfigPins
-                0x00000000       0xcc ./source/Drivers/enet.o
- .text.ENET_ConfigPHYLink
-                0x00000000       0xa0 ./source/Drivers/enet.o
- .text.ENET_BuildBroadCastFrame
-                0x00000000       0x58 ./source/Drivers/enet.o
- .rodata        0x00000000       0x20 ./source/Drivers/enet.o
- .text.ENET_Config
-                0x00000000       0xe4 ./source/Drivers/enet.o
- .text.ENET_Tx  0x00000000       0x80 ./source/Drivers/enet.o
- .text.ENET_Rx  0x00000000       0xb8 ./source/Drivers/enet.o
- .debug_info    0x00000000     0x2593 ./source/Drivers/enet.o
- .debug_abbrev  0x00000000      0x370 ./source/Drivers/enet.o
+                0x00000000       0xc6 ./source/Drivers/Security_Layer/aes.o
+ .debug_macro   0x00000000      0xb0e ./source/Drivers/Security_Layer/aes.o
+ .debug_macro   0x00000000       0x10 ./source/Drivers/Security_Layer/aes.o
+ .debug_macro   0x00000000      0x12e ./source/Drivers/Security_Layer/aes.o
+ .debug_macro   0x00000000      0x5b3 ./source/Drivers/Security_Layer/aes.o
+ .debug_macro   0x00000000       0x16 ./source/Drivers/Security_Layer/aes.o
+ .debug_macro   0x00000000       0x2e ./source/Drivers/Security_Layer/aes.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Security_Layer/crc.o
+ .text          0x00000000        0x0 ./source/Drivers/Security_Layer/crc.o
+ .data          0x00000000        0x0 ./source/Drivers/Security_Layer/crc.o
+ .bss           0x00000000        0x0 ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000      0xb0e ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000       0x10 ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000       0x1c ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000       0x22 ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000      0x12e ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000      0x5b3 ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000       0x22 ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000       0x10 ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000       0x56 ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000       0x1c ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000       0x22 ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000       0xfb ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000      0xeeb ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000       0x40 ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000    0x1626f ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000     0x14b0 ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000       0x7a ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000       0xaf ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000      0x190 ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x00000000       0x10 ./source/Drivers/Security_Layer/crc.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/Ethernet.o
+ .text          0x00000000        0x0 ./source/Drivers/Ethernet_Layer/Ethernet.o
+ .data          0x00000000        0x0 ./source/Drivers/Ethernet_Layer/Ethernet.o
+ .bss           0x00000000        0x0 ./source/Drivers/Ethernet_Layer/Ethernet.o
+ .debug_info    0x00000000       0x21 ./source/Drivers/Ethernet_Layer/Ethernet.o
+ .debug_abbrev  0x00000000       0x13 ./source/Drivers/Ethernet_Layer/Ethernet.o
  .debug_aranges
-                0x00000000       0x98 ./source/Drivers/enet.o
- .debug_ranges  0x00000000       0x88 ./source/Drivers/enet.o
- .debug_macro   0x00000000      0x1bd ./source/Drivers/enet.o
- .debug_macro   0x00000000      0xb0e ./source/Drivers/enet.o
- .debug_macro   0x00000000       0x10 ./source/Drivers/enet.o
- .debug_macro   0x00000000       0x1c ./source/Drivers/enet.o
- .debug_macro   0x00000000       0x22 ./source/Drivers/enet.o
- .debug_macro   0x00000000      0x12e ./source/Drivers/enet.o
- .debug_macro   0x00000000      0x5b3 ./source/Drivers/enet.o
- .debug_macro   0x00000000       0x22 ./source/Drivers/enet.o
- .debug_macro   0x00000000       0x10 ./source/Drivers/enet.o
- .debug_macro   0x00000000       0x56 ./source/Drivers/enet.o
- .debug_macro   0x00000000       0x1c ./source/Drivers/enet.o
- .debug_macro   0x00000000       0x22 ./source/Drivers/enet.o
- .debug_macro   0x00000000       0xfb ./source/Drivers/enet.o
- .debug_macro   0x00000000      0xeeb ./source/Drivers/enet.o
- .debug_macro   0x00000000       0x40 ./source/Drivers/enet.o
- .debug_macro   0x00000000    0x1626f ./source/Drivers/enet.o
- .debug_macro   0x00000000     0x14b0 ./source/Drivers/enet.o
- .debug_macro   0x00000000       0x7a ./source/Drivers/enet.o
- .debug_macro   0x00000000       0xaf ./source/Drivers/enet.o
- .debug_macro   0x00000000      0x190 ./source/Drivers/enet.o
- .debug_macro   0x00000000       0xd1 ./source/Drivers/enet.o
- .debug_macro   0x00000000       0xb8 ./source/Drivers/enet.o
- .debug_macro   0x00000000       0x52 ./source/Drivers/enet.o
- .debug_macro   0x00000000       0x10 ./source/Drivers/enet.o
- .debug_macro   0x00000000       0x16 ./source/Drivers/enet.o
- .debug_line    0x00000000      0x6f2 ./source/Drivers/enet.o
- .debug_str     0x00000000    0xb83eb ./source/Drivers/enet.o
- .comment       0x00000000       0x45 ./source/Drivers/enet.o
- .debug_frame   0x00000000      0x270 ./source/Drivers/enet.o
+                0x00000000       0x18 ./source/Drivers/Ethernet_Layer/Ethernet.o
+ .debug_macro   0x00000000       0x11 ./source/Drivers/Ethernet_Layer/Ethernet.o
+ .debug_macro   0x00000000      0xb0e ./source/Drivers/Ethernet_Layer/Ethernet.o
+ .debug_line    0x00000000       0x4c ./source/Drivers/Ethernet_Layer/Ethernet.o
+ .debug_str     0x00000000     0x2f2e ./source/Drivers/Ethernet_Layer/Ethernet.o
+ .comment       0x00000000       0x45 ./source/Drivers/Ethernet_Layer/Ethernet.o
  .ARM.attributes
-                0x00000000       0x34 ./source/Drivers/enet.o
+                0x00000000       0x34 ./source/Drivers/Ethernet_Layer/Ethernet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .group         0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .text          0x00000000        0x0 ./source/Drivers/Ethernet_Layer/enet.o
+ .data          0x00000000        0x0 ./source/Drivers/Ethernet_Layer/enet.o
+ .bss           0x00000000        0x0 ./source/Drivers/Ethernet_Layer/enet.o
+ .text.CLOCK_EnableClock
+                0x00000000       0x34 ./source/Drivers/Ethernet_Layer/enet.o
+ .text.CLOCK_SetRmii0Clock
+                0x00000000       0x38 ./source/Drivers/Ethernet_Layer/enet.o
+ .text.ENET_ActiveRead
+                0x00000000       0x1c ./source/Drivers/Ethernet_Layer/enet.o
+ .text.PHY_Init
+                0x00000000       0x20 ./source/Drivers/Ethernet_Layer/enet.o
+ .text.PHY_GetAutoNegotiationStatus
+                0x00000000       0x20 ./source/Drivers/Ethernet_Layer/enet.o
+ .text.PHY_GetLinkStatus
+                0x00000000       0x20 ./source/Drivers/Ethernet_Layer/enet.o
+ .text.PHY_GetLinkSpeedDuplex
+                0x00000000       0x24 ./source/Drivers/Ethernet_Layer/enet.o
+ .text.SYSMPU_Enable
+                0x00000000       0x38 ./source/Drivers/Ethernet_Layer/enet.o
+ .rodata.PORT_SetPinConfig.str1.4
+                0x00000000       0x43 ./source/Drivers/Ethernet_Layer/enet.o
+ .text.PORT_SetPinConfig
+                0x00000000       0x38 ./source/Drivers/Ethernet_Layer/enet.o
+ .text.PORT_SetPinMux
+                0x00000000       0x3a ./source/Drivers/Ethernet_Layer/enet.o
+ NonCacheable   0x00000000       0x40 ./source/Drivers/Ethernet_Layer/enet.o
+ .bss.g_rxDataBuff
+                0x00000000     0x17c0 ./source/Drivers/Ethernet_Layer/enet.o
+ .bss.g_txDataBuff
+                0x00000000     0x17c0 ./source/Drivers/Ethernet_Layer/enet.o
+ .bss.g_handle  0x00000000       0x84 ./source/Drivers/Ethernet_Layer/enet.o
+ .bss.g_frame   0x00000000       0x4a ./source/Drivers/Ethernet_Layer/enet.o
+ .data.mdioHandle
+                0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .data.phyHandle
+                0x00000000        0xc ./source/Drivers/Ethernet_Layer/enet.o
+ .bss.status    0x00000000        0x4 ./source/Drivers/Ethernet_Layer/enet.o
+ .bss.phyConfig
+                0x00000000        0x8 ./source/Drivers/Ethernet_Layer/enet.o
+ .bss.speed     0x00000000        0x1 ./source/Drivers/Ethernet_Layer/enet.o
+ .bss.duplex    0x00000000        0x1 ./source/Drivers/Ethernet_Layer/enet.o
+ .bss.link      0x00000000        0x1 ./source/Drivers/Ethernet_Layer/enet.o
+ .bss.eErrStatic
+                0x00000000       0x14 ./source/Drivers/Ethernet_Layer/enet.o
+ .bss.length    0x00000000        0x4 ./source/Drivers/Ethernet_Layer/enet.o
+ .text.ENET_ConfigPins
+                0x00000000       0xcc ./source/Drivers/Ethernet_Layer/enet.o
+ .text.ENET_ConfigPHYLink
+                0x00000000       0xa0 ./source/Drivers/Ethernet_Layer/enet.o
+ .text.ENET_BuildBroadCastFrame
+                0x00000000       0x58 ./source/Drivers/Ethernet_Layer/enet.o
+ .rodata        0x00000000       0x20 ./source/Drivers/Ethernet_Layer/enet.o
+ .text.ENET_Config
+                0x00000000       0xe4 ./source/Drivers/Ethernet_Layer/enet.o
+ .text.ENET_Tx  0x00000000       0x80 ./source/Drivers/Ethernet_Layer/enet.o
+ .text.ENET_Rx  0x00000000       0xb8 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_info    0x00000000     0x2593 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_abbrev  0x00000000      0x370 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_aranges
+                0x00000000       0x98 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_ranges  0x00000000       0x88 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000      0x1bd ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000      0xb0e ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0x10 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0x1c ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0x22 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000      0x12e ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000      0x5b3 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0x22 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0x10 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0x56 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0x1c ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0x22 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0xfb ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000      0xeeb ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0x40 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000    0x1626f ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000     0x14b0 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0x7a ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0xaf ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000      0x190 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0xd1 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0xb8 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0x52 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0x10 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_macro   0x00000000       0x16 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_line    0x00000000      0x742 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_str     0x00000000    0xb83fa ./source/Drivers/Ethernet_Layer/enet.o
+ .comment       0x00000000       0x45 ./source/Drivers/Ethernet_Layer/enet.o
+ .debug_frame   0x00000000      0x270 ./source/Drivers/Ethernet_Layer/enet.o
+ .ARM.attributes
+                0x00000000       0x34 ./source/Drivers/Ethernet_Layer/enet.o
  .group         0x00000000        0xc ./source/enet_txrx_transfer.o
  .group         0x00000000        0xc ./source/enet_txrx_transfer.o
  .group         0x00000000        0xc ./source/enet_txrx_transfer.o
@@ -2929,10 +2945,11 @@ Linker script and memory map
 LOAD ./utilities/fsl_assert.o
 LOAD ./utilities/fsl_debug_console.o
 LOAD ./startup/startup_mk66f18.o
-LOAD ./source/Drivers/Security.o
-LOAD ./source/Drivers/aes.o
-LOAD ./source/Drivers/crc.o
-LOAD ./source/Drivers/enet.o
+LOAD ./source/Drivers/Security_Layer/Security.o
+LOAD ./source/Drivers/Security_Layer/aes.o
+LOAD ./source/Drivers/Security_Layer/crc.o
+LOAD ./source/Drivers/Ethernet_Layer/Ethernet.o
+LOAD ./source/Drivers/Ethernet_Layer/enet.o
 LOAD ./source/enet_txrx_transfer.o
 LOAD ./source/semihost_hardfault.o
 LOAD ./phy/fsl_phyksz8081.o
@@ -3132,25 +3149,25 @@ END GROUP
  .text.DbgConsole_PrintfFormattedData
                 0x00000494      0x3e0 ./utilities/fsl_debug_console.o
  .text.Security_init
-                0x00000874       0x28 ./source/Drivers/Security.o
+                0x00000874       0x28 ./source/Drivers/Security_Layer/Security.o
                 0x00000874                Security_init
  .text.Security_Encrypt
-                0x0000089c       0x38 ./source/Drivers/Security.o
+                0x0000089c       0x38 ./source/Drivers/Security_Layer/Security.o
                 0x0000089c                Security_Encrypt
  .text.Security_Decrypt
-                0x000008d4       0x38 ./source/Drivers/Security.o
+                0x000008d4       0x38 ./source/Drivers/Security_Layer/Security.o
                 0x000008d4                Security_Decrypt
  .text.KeyExpansion
-                0x0000090c      0x1a0 ./source/Drivers/aes.o
+                0x0000090c      0x1a0 ./source/Drivers/Security_Layer/aes.o
  .text.SubBytes
-                0x00000aac       0x64 ./source/Drivers/aes.o
+                0x00000aac       0x64 ./source/Drivers/Security_Layer/aes.o
  .text.InvSubBytes
-                0x00000b10       0x64 ./source/Drivers/aes.o
+                0x00000b10       0x64 ./source/Drivers/Security_Layer/aes.o
  .text.CRC32_Init
-                0x00000b74       0x40 ./source/Drivers/crc.o
+                0x00000b74       0x40 ./source/Drivers/Security_Layer/crc.o
                 0x00000b74                CRC32_Init
  .text.CRC32_GetChecksum
-                0x00000bb4       0x28 ./source/Drivers/crc.o
+                0x00000bb4       0x28 ./source/Drivers/Security_Layer/crc.o
                 0x00000bb4                CRC32_GetChecksum
  .text.main     0x00000bdc       0x3c ./source/enet_txrx_transfer.o
                 0x00000bdc                main
@@ -3524,35 +3541,35 @@ END GROUP
                 0x000015d6        0x8 ./startup/startup_mk66f18.o
                 0x000015d6                CAN1_Wake_Up_IRQHandler
  .text.Security_MakeChecksum
-                0x000015de       0x20 ./source/Drivers/Security.o
+                0x000015de       0x20 ./source/Drivers/Security_Layer/Security.o
                 0x000015de                Security_MakeChecksum
  .text.AES_init_ctx_iv
-                0x000015fe       0x2c ./source/Drivers/aes.o
+                0x000015fe       0x2c ./source/Drivers/Security_Layer/aes.o
                 0x000015fe                AES_init_ctx_iv
  .text.AES_ctx_set_iv
-                0x0000162a       0x20 ./source/Drivers/aes.o
+                0x0000162a       0x20 ./source/Drivers/Security_Layer/aes.o
                 0x0000162a                AES_ctx_set_iv
  .text.AddRoundKey
-                0x0000164a       0x78 ./source/Drivers/aes.o
+                0x0000164a       0x78 ./source/Drivers/Security_Layer/aes.o
  .text.ShiftRows
-                0x000016c2       0x84 ./source/Drivers/aes.o
- .text.xtime    0x00001746       0x3e ./source/Drivers/aes.o
+                0x000016c2       0x84 ./source/Drivers/Security_Layer/aes.o
+ .text.xtime    0x00001746       0x3e ./source/Drivers/Security_Layer/aes.o
  .text.MixColumns
-                0x00001784      0x16a ./source/Drivers/aes.o
+                0x00001784      0x16a ./source/Drivers/Security_Layer/aes.o
  .text.InvMixColumns
-                0x000018ee      0x698 ./source/Drivers/aes.o
+                0x000018ee      0x698 ./source/Drivers/Security_Layer/aes.o
  .text.InvShiftRows
-                0x00001f86       0x84 ./source/Drivers/aes.o
- .text.Cipher   0x0000200a       0x5c ./source/Drivers/aes.o
+                0x00001f86       0x84 ./source/Drivers/Security_Layer/aes.o
+ .text.Cipher   0x0000200a       0x5c ./source/Drivers/Security_Layer/aes.o
  .text.InvCipher
-                0x00002066       0x52 ./source/Drivers/aes.o
+                0x00002066       0x52 ./source/Drivers/Security_Layer/aes.o
  .text.XorWithIv
-                0x000020b8       0x46 ./source/Drivers/aes.o
+                0x000020b8       0x46 ./source/Drivers/Security_Layer/aes.o
  .text.AES_CBC_encrypt_buffer
-                0x000020fe       0x58 ./source/Drivers/aes.o
+                0x000020fe       0x58 ./source/Drivers/Security_Layer/aes.o
                 0x000020fe                AES_CBC_encrypt_buffer
  .text.AES_CBC_decrypt_buffer
-                0x00002156       0x64 ./source/Drivers/aes.o
+                0x00002156       0x64 ./source/Drivers/Security_Layer/aes.o
                 0x00002156                AES_CBC_decrypt_buffer
  .text.HardFault_Handler
                 0x000021ba       0x36 ./source/semihost_hardfault.o
@@ -3654,10 +3671,10 @@ END GROUP
                 0x00002770       0x70 ./utilities/fsl_assert.o
                                  0x14 (size before relaxing)
  .rodata.Security_init.str1.4
-                0x000027e0       0x25 ./source/Drivers/Security.o
- .rodata.sbox   0x000027e0      0x100 ./source/Drivers/aes.o
- .rodata.rsbox  0x000028e0      0x100 ./source/Drivers/aes.o
- .rodata.Rcon   0x000029e0        0xb ./source/Drivers/aes.o
+                0x000027e0       0x25 ./source/Drivers/Security_Layer/Security.o
+ .rodata.sbox   0x000027e0      0x100 ./source/Drivers/Security_Layer/aes.o
+ .rodata.rsbox  0x000028e0      0x100 ./source/Drivers/Security_Layer/aes.o
+ .rodata.Rcon   0x000029e0        0xb ./source/Drivers/Security_Layer/aes.o
  .rodata.ENET_GetInstance.str1.4
                 0x000029eb       0x34 ./drivers/fsl_enet.o
  *fill*         0x000029eb        0x1 ff
@@ -3784,7 +3801,7 @@ END GROUP
  *(SORT_BY_ALIGNMENT(.bss*))
  .bss.s_debugConsole
                 0x20000020       0x14 ./utilities/fsl_debug_console.o
- .bss.ctx       0x20000034       0xc0 ./source/Drivers/Security.o
+ .bss.ctx       0x20000034       0xc0 ./source/Drivers/Security_Layer/Security.o
                 0x20000034                ctx
  .bss.buffer2   0x200000f4       0x20 ./source/enet_txrx_transfer.o
                 0x200000f4                buffer2
@@ -3886,9 +3903,9 @@ LOAD linker stubs
  .debug_info    0x00000000       0xc5 ./utilities/fsl_assert.o
  .debug_info    0x000000c5      0xd6a ./utilities/fsl_debug_console.o
  .debug_info    0x00000e2f      0xe97 ./startup/startup_mk66f18.o
- .debug_info    0x00001cc6      0x53a ./source/Drivers/Security.o
- .debug_info    0x00002200      0x7ba ./source/Drivers/aes.o
- .debug_info    0x000029ba      0x414 ./source/Drivers/crc.o
+ .debug_info    0x00001cc6      0x53a ./source/Drivers/Security_Layer/Security.o
+ .debug_info    0x00002200      0x7ba ./source/Drivers/Security_Layer/aes.o
+ .debug_info    0x000029ba      0x414 ./source/Drivers/Security_Layer/crc.o
  .debug_info    0x00002dce      0x3ff ./source/enet_txrx_transfer.o
  .debug_info    0x000031cd       0x3c ./source/semihost_hardfault.o
  .debug_info    0x00003209      0x8f5 ./drivers/fsl_crc.o
@@ -3927,9 +3944,9 @@ LOAD linker stubs
  .debug_abbrev  0x00000000       0x90 ./utilities/fsl_assert.o
  .debug_abbrev  0x00000090      0x285 ./utilities/fsl_debug_console.o
  .debug_abbrev  0x00000315      0x17a ./startup/startup_mk66f18.o
- .debug_abbrev  0x0000048f      0x14d ./source/Drivers/Security.o
- .debug_abbrev  0x000005dc      0x1fc ./source/Drivers/aes.o
- .debug_abbrev  0x000007d8      0x188 ./source/Drivers/crc.o
+ .debug_abbrev  0x0000048f      0x14d ./source/Drivers/Security_Layer/Security.o
+ .debug_abbrev  0x000005dc      0x1fc ./source/Drivers/Security_Layer/aes.o
+ .debug_abbrev  0x000007d8      0x188 ./source/Drivers/Security_Layer/crc.o
  .debug_abbrev  0x00000960       0xd8 ./source/enet_txrx_transfer.o
  .debug_abbrev  0x00000a38       0x31 ./source/semihost_hardfault.o
  .debug_abbrev  0x00000a69      0x240 ./drivers/fsl_crc.o
@@ -3972,11 +3989,11 @@ LOAD linker stubs
  .debug_aranges
                 0x00000098      0x3a0 ./startup/startup_mk66f18.o
  .debug_aranges
-                0x00000438       0x38 ./source/Drivers/Security.o
+                0x00000438       0x38 ./source/Drivers/Security_Layer/Security.o
  .debug_aranges
-                0x00000470       0xb8 ./source/Drivers/aes.o
+                0x00000470       0xb8 ./source/Drivers/Security_Layer/aes.o
  .debug_aranges
-                0x00000528       0x28 ./source/Drivers/crc.o
+                0x00000528       0x28 ./source/Drivers/Security_Layer/crc.o
  .debug_aranges
                 0x00000550       0x20 ./source/enet_txrx_transfer.o
  .debug_aranges
@@ -4048,9 +4065,9 @@ LOAD linker stubs
  .debug_ranges  0x00000000       0x10 ./utilities/fsl_assert.o
  .debug_ranges  0x00000010       0x68 ./utilities/fsl_debug_console.o
  .debug_ranges  0x00000078      0x390 ./startup/startup_mk66f18.o
- .debug_ranges  0x00000408       0x28 ./source/Drivers/Security.o
- .debug_ranges  0x00000430       0xa8 ./source/Drivers/aes.o
- .debug_ranges  0x000004d8       0x18 ./source/Drivers/crc.o
+ .debug_ranges  0x00000408       0x28 ./source/Drivers/Security_Layer/Security.o
+ .debug_ranges  0x00000430       0xa8 ./source/Drivers/Security_Layer/aes.o
+ .debug_ranges  0x000004d8       0x18 ./source/Drivers/Security_Layer/crc.o
  .debug_ranges  0x000004f0       0x10 ./source/enet_txrx_transfer.o
  .debug_ranges  0x00000500       0x10 ./source/semihost_hardfault.o
  .debug_ranges  0x00000510       0x60 ./drivers/fsl_crc.o
@@ -4083,7 +4100,7 @@ LOAD linker stubs
  .debug_ranges  0x00000c78       0x10 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_tmpnam.o)
  .debug_ranges  0x00000c88       0x10 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_write.o)
 
-.debug_macro    0x00000000    0x1ac11
+.debug_macro    0x00000000    0x1abfb
  .debug_macro   0x00000000      0x123 ./utilities/fsl_assert.o
  .debug_macro   0x00000123      0xb0e ./utilities/fsl_assert.o
  .debug_macro   0x00000c31       0x10 ./utilities/fsl_assert.o
@@ -4116,116 +4133,115 @@ LOAD linker stubs
  .debug_macro   0x0001a0fb       0x16 ./utilities/fsl_debug_console.o
  .debug_macro   0x0001a111       0x46 ./utilities/fsl_debug_console.o
  .debug_macro   0x0001a157       0x29 ./startup/startup_mk66f18.o
- .debug_macro   0x0001a180      0x146 ./source/Drivers/Security.o
- .debug_macro   0x0001a2c6       0x16 ./source/Drivers/Security.o
- .debug_macro   0x0001a2dc       0x2e ./source/Drivers/Security.o
- .debug_macro   0x0001a30a       0x1c ./source/Drivers/Security.o
- .debug_macro   0x0001a326       0x10 ./source/Drivers/Security.o
- .debug_macro   0x0001a336       0x22 ./source/Drivers/Security.o
- .debug_macro   0x0001a358       0x9f ./source/Drivers/aes.o
- .debug_macro   0x0001a3f7       0x10 ./source/Drivers/aes.o
- .debug_macro   0x0001a407      0x125 ./source/Drivers/crc.o
- .debug_macro   0x0001a52c      0x156 ./source/enet_txrx_transfer.o
- .debug_macro   0x0001a682       0x11 ./source/semihost_hardfault.o
- .debug_macro   0x0001a693      0x14b ./drivers/fsl_crc.o
- .debug_macro   0x0001a7de      0x133 ./drivers/fsl_enet.o
- .debug_macro   0x0001a911      0x121 ./drivers/fsl_lpuart.o
- .debug_macro   0x0001aa32       0x10 ./drivers/fsl_lpuart.o
- .debug_macro   0x0001aa42      0x127 ./drivers/fsl_uart.o
- .debug_macro   0x0001ab69       0x10 ./drivers/fsl_uart.o
- .debug_macro   0x0001ab79       0x98 ./device/system_MK66F18.o
+ .debug_macro   0x0001a180      0x146 ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x0001a2c6       0x16 ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x0001a2dc       0x2e ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x0001a30a       0x1c ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x0001a326       0x10 ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x0001a336       0x22 ./source/Drivers/Security_Layer/Security.o
+ .debug_macro   0x0001a358       0x99 ./source/Drivers/Security_Layer/aes.o
+ .debug_macro   0x0001a3f1      0x125 ./source/Drivers/Security_Layer/crc.o
+ .debug_macro   0x0001a516      0x156 ./source/enet_txrx_transfer.o
+ .debug_macro   0x0001a66c       0x11 ./source/semihost_hardfault.o
+ .debug_macro   0x0001a67d      0x14b ./drivers/fsl_crc.o
+ .debug_macro   0x0001a7c8      0x133 ./drivers/fsl_enet.o
+ .debug_macro   0x0001a8fb      0x121 ./drivers/fsl_lpuart.o
+ .debug_macro   0x0001aa1c       0x10 ./drivers/fsl_lpuart.o
+ .debug_macro   0x0001aa2c      0x127 ./drivers/fsl_uart.o
+ .debug_macro   0x0001ab53       0x10 ./drivers/fsl_uart.o
+ .debug_macro   0x0001ab63       0x98 ./device/system_MK66F18.o
 
-.debug_line     0x00000000     0x951a
+.debug_line     0x00000000     0x967b
  .debug_line    0x00000000      0x32f ./utilities/fsl_assert.o
  .debug_line    0x0000032f      0xba9 ./utilities/fsl_debug_console.o
  .debug_line    0x00000ed8      0xb63 ./startup/startup_mk66f18.o
- .debug_line    0x00001a3b      0x39b ./source/Drivers/Security.o
- .debug_line    0x00001dd6      0xbec ./source/Drivers/aes.o
- .debug_line    0x000029c2      0x33f ./source/Drivers/crc.o
- .debug_line    0x00002d01      0x371 ./source/enet_txrx_transfer.o
- .debug_line    0x00003072       0x59 ./source/semihost_hardfault.o
- .debug_line    0x000030cb      0x4f6 ./drivers/fsl_crc.o
- .debug_line    0x000035c1     0x1dff ./drivers/fsl_enet.o
- .debug_line    0x000053c0      0xfab ./drivers/fsl_lpuart.o
- .debug_line    0x0000636b     0x1472 ./drivers/fsl_uart.o
- .debug_line    0x000077dd      0x411 ./device/system_MK66F18.o
- .debug_line    0x00007bee       0xc4 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(_cr__main.o)
- .debug_line    0x00007cb2       0x9b C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(memcpy.o)
- .debug_line    0x00007d4d       0x7b C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(memset.o)
- .debug_line    0x00007dc8      0x37b C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(alloc.o)
- .debug_line    0x00008143      0x152 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(initio.o)
- .debug_line    0x00008295       0xed C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(setvbuf.o)
- .debug_line    0x00008382      0x109 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(strlen.o)
- .debug_line    0x0000848b      0x11c C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_fdopen.o)
- .debug_line    0x000085a7       0x4e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(errno.o)
- .debug_line    0x000085f5      0x107 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fclose.o)
- .debug_line    0x000086fc       0xe3 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fflush.o)
- .debug_line    0x000087df      0x225 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fseek.o)
- .debug_line    0x00008a04      0x105 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(ftell.o)
- .debug_line    0x00008b09       0xec C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(remove.o)
- .debug_line    0x00008bf5       0xf6 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_do_fflush.o)
- .debug_line    0x00008ceb      0x121 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_fflush.o)
- .debug_line    0x00008e0c      0x125 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_writebuf.o)
- .debug_line    0x00008f31      0x2dd C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_deferredlazyseek.o)
- .debug_line    0x0000920e       0xea C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__ciob.o)
- .debug_line    0x000092f8       0x4e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_close.o)
- .debug_line    0x00009346       0x4d C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_flen.o)
- .debug_line    0x00009393       0x4e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_istty.o)
- .debug_line    0x000093e1       0x4f C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_remove.o)
- .debug_line    0x00009430       0x4d C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_seek.o)
- .debug_line    0x0000947d       0x4f C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_tmpnam.o)
- .debug_line    0x000094cc       0x4e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_write.o)
+ .debug_line    0x00001a3b      0x3eb ./source/Drivers/Security_Layer/Security.o
+ .debug_line    0x00001e26      0xc3c ./source/Drivers/Security_Layer/aes.o
+ .debug_line    0x00002a62      0x38f ./source/Drivers/Security_Layer/crc.o
+ .debug_line    0x00002df1      0x3e2 ./source/enet_txrx_transfer.o
+ .debug_line    0x000031d3       0x59 ./source/semihost_hardfault.o
+ .debug_line    0x0000322c      0x4f6 ./drivers/fsl_crc.o
+ .debug_line    0x00003722     0x1dff ./drivers/fsl_enet.o
+ .debug_line    0x00005521      0xfab ./drivers/fsl_lpuart.o
+ .debug_line    0x000064cc     0x1472 ./drivers/fsl_uart.o
+ .debug_line    0x0000793e      0x411 ./device/system_MK66F18.o
+ .debug_line    0x00007d4f       0xc4 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(_cr__main.o)
+ .debug_line    0x00007e13       0x9b C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(memcpy.o)
+ .debug_line    0x00007eae       0x7b C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(memset.o)
+ .debug_line    0x00007f29      0x37b C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(alloc.o)
+ .debug_line    0x000082a4      0x152 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(initio.o)
+ .debug_line    0x000083f6       0xed C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(setvbuf.o)
+ .debug_line    0x000084e3      0x109 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(strlen.o)
+ .debug_line    0x000085ec      0x11c C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_fdopen.o)
+ .debug_line    0x00008708       0x4e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(errno.o)
+ .debug_line    0x00008756      0x107 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fclose.o)
+ .debug_line    0x0000885d       0xe3 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fflush.o)
+ .debug_line    0x00008940      0x225 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fseek.o)
+ .debug_line    0x00008b65      0x105 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(ftell.o)
+ .debug_line    0x00008c6a       0xec C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(remove.o)
+ .debug_line    0x00008d56       0xf6 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_do_fflush.o)
+ .debug_line    0x00008e4c      0x121 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_fflush.o)
+ .debug_line    0x00008f6d      0x125 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_writebuf.o)
+ .debug_line    0x00009092      0x2dd C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_deferredlazyseek.o)
+ .debug_line    0x0000936f       0xea C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__ciob.o)
+ .debug_line    0x00009459       0x4e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_close.o)
+ .debug_line    0x000094a7       0x4d C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_flen.o)
+ .debug_line    0x000094f4       0x4e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_istty.o)
+ .debug_line    0x00009542       0x4f C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_remove.o)
+ .debug_line    0x00009591       0x4d C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_seek.o)
+ .debug_line    0x000095de       0x4f C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_tmpnam.o)
+ .debug_line    0x0000962d       0x4e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_write.o)
 
-.debug_str      0x00000000    0xbc8a1
- .debug_str     0x00000000    0xbc8a1 ./utilities/fsl_assert.o
+.debug_str      0x00000000    0xbc8ce
+ .debug_str     0x00000000    0xbc8ce ./utilities/fsl_assert.o
                               0xb5099 (size before relaxing)
- .debug_str     0x000bc8a1    0xb6779 ./utilities/fsl_debug_console.o
- .debug_str     0x000bc8a1     0x394b ./startup/startup_mk66f18.o
- .debug_str     0x000bc8a1    0xb5a0e ./source/Drivers/Security.o
- .debug_str     0x000bc8a1     0x4981 ./source/Drivers/aes.o
- .debug_str     0x000bc8a1    0xb515b ./source/Drivers/crc.o
- .debug_str     0x000bc8a1    0xb5999 ./source/enet_txrx_transfer.o
- .debug_str     0x000bc8a1     0x2f33 ./source/semihost_hardfault.o
- .debug_str     0x000bc8a1    0xb5775 ./drivers/fsl_crc.o
- .debug_str     0x000bc8a1    0xb8563 ./drivers/fsl_enet.o
- .debug_str     0x000bc8a1    0xb72df ./drivers/fsl_lpuart.o
- .debug_str     0x000bc8a1    0xb7250 ./drivers/fsl_uart.o
- .debug_str     0x000bc8a1    0xb36df ./device/system_MK66F18.o
- .debug_str     0x000bc8a1      0x184 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(_cr__main.o)
- .debug_str     0x000bc8a1      0x1d2 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(memcpy.o)
- .debug_str     0x000bc8a1      0x19b C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(memset.o)
- .debug_str     0x000bc8a1      0x24e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(alloc.o)
- .debug_str     0x000bc8a1      0x258 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(initio.o)
- .debug_str     0x000bc8a1      0x24e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(setvbuf.o)
- .debug_str     0x000bc8a1      0x195 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(strlen.o)
- .debug_str     0x000bc8a1      0x24b C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_fdopen.o)
- .debug_str     0x000bc8a1      0x12f C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(errno.o)
- .debug_str     0x000bc8a1      0x262 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fclose.o)
- .debug_str     0x000bc8a1      0x250 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fflush.o)
- .debug_str     0x000bc8a1      0x252 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fseek.o)
- .debug_str     0x000bc8a1      0x22f C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(ftell.o)
- .debug_str     0x000bc8a1      0x1ee C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(remove.o)
- .debug_str     0x000bc8a1      0x243 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_do_fflush.o)
- .debug_str     0x000bc8a1      0x22d C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_fflush.o)
- .debug_str     0x000bc8a1      0x25e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_writebuf.o)
- .debug_str     0x000bc8a1      0x292 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_deferredlazyseek.o)
- .debug_str     0x000bc8a1      0x21c C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__ciob.o)
- .debug_str     0x000bc8a1      0x175 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_close.o)
- .debug_str     0x000bc8a1      0x16e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_flen.o)
- .debug_str     0x000bc8a1      0x170 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_istty.o)
- .debug_str     0x000bc8a1      0x17b C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_remove.o)
- .debug_str     0x000bc8a1      0x16e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_seek.o)
- .debug_str     0x000bc8a1      0x188 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_tmpnam.o)
- .debug_str     0x000bc8a1      0x18b C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_write.o)
+ .debug_str     0x000bc8ce    0xb6779 ./utilities/fsl_debug_console.o
+ .debug_str     0x000bc8ce     0x394b ./startup/startup_mk66f18.o
+ .debug_str     0x000bc8ce    0xb5a1d ./source/Drivers/Security_Layer/Security.o
+ .debug_str     0x000bc8ce     0x4990 ./source/Drivers/Security_Layer/aes.o
+ .debug_str     0x000bc8ce    0xb516a ./source/Drivers/Security_Layer/crc.o
+ .debug_str     0x000bc8ce    0xb5999 ./source/enet_txrx_transfer.o
+ .debug_str     0x000bc8ce     0x2f33 ./source/semihost_hardfault.o
+ .debug_str     0x000bc8ce    0xb5775 ./drivers/fsl_crc.o
+ .debug_str     0x000bc8ce    0xb8563 ./drivers/fsl_enet.o
+ .debug_str     0x000bc8ce    0xb72df ./drivers/fsl_lpuart.o
+ .debug_str     0x000bc8ce    0xb7250 ./drivers/fsl_uart.o
+ .debug_str     0x000bc8ce    0xb36df ./device/system_MK66F18.o
+ .debug_str     0x000bc8ce      0x184 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(_cr__main.o)
+ .debug_str     0x000bc8ce      0x1d2 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(memcpy.o)
+ .debug_str     0x000bc8ce      0x19b C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(memset.o)
+ .debug_str     0x000bc8ce      0x24e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(alloc.o)
+ .debug_str     0x000bc8ce      0x258 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(initio.o)
+ .debug_str     0x000bc8ce      0x24e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(setvbuf.o)
+ .debug_str     0x000bc8ce      0x195 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(strlen.o)
+ .debug_str     0x000bc8ce      0x24b C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_fdopen.o)
+ .debug_str     0x000bc8ce      0x12f C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(errno.o)
+ .debug_str     0x000bc8ce      0x262 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fclose.o)
+ .debug_str     0x000bc8ce      0x250 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fflush.o)
+ .debug_str     0x000bc8ce      0x252 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fseek.o)
+ .debug_str     0x000bc8ce      0x22f C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(ftell.o)
+ .debug_str     0x000bc8ce      0x1ee C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(remove.o)
+ .debug_str     0x000bc8ce      0x243 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_do_fflush.o)
+ .debug_str     0x000bc8ce      0x22d C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_fflush.o)
+ .debug_str     0x000bc8ce      0x25e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_writebuf.o)
+ .debug_str     0x000bc8ce      0x292 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_deferredlazyseek.o)
+ .debug_str     0x000bc8ce      0x21c C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__ciob.o)
+ .debug_str     0x000bc8ce      0x175 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_close.o)
+ .debug_str     0x000bc8ce      0x16e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_flen.o)
+ .debug_str     0x000bc8ce      0x170 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_istty.o)
+ .debug_str     0x000bc8ce      0x17b C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_remove.o)
+ .debug_str     0x000bc8ce      0x16e C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_seek.o)
+ .debug_str     0x000bc8ce      0x188 C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_tmpnam.o)
+ .debug_str     0x000bc8ce      0x18b C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(__sys_write.o)
 
 .comment        0x00000000       0x44
  .comment       0x00000000       0x44 ./utilities/fsl_assert.o
                                  0x45 (size before relaxing)
  .comment       0x00000044       0x45 ./utilities/fsl_debug_console.o
  .comment       0x00000044       0x45 ./startup/startup_mk66f18.o
- .comment       0x00000044       0x45 ./source/Drivers/Security.o
- .comment       0x00000044       0x45 ./source/Drivers/aes.o
- .comment       0x00000044       0x45 ./source/Drivers/crc.o
+ .comment       0x00000044       0x45 ./source/Drivers/Security_Layer/Security.o
+ .comment       0x00000044       0x45 ./source/Drivers/Security_Layer/aes.o
+ .comment       0x00000044       0x45 ./source/Drivers/Security_Layer/crc.o
  .comment       0x00000044       0x45 ./source/enet_txrx_transfer.o
  .comment       0x00000044       0x45 ./source/semihost_hardfault.o
  .comment       0x00000044       0x45 ./drivers/fsl_crc.o
@@ -4269,11 +4285,11 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000068       0x34 ./startup/startup_mk66f18.o
  .ARM.attributes
-                0x0000009c       0x34 ./source/Drivers/Security.o
+                0x0000009c       0x34 ./source/Drivers/Security_Layer/Security.o
  .ARM.attributes
-                0x000000d0       0x34 ./source/Drivers/aes.o
+                0x000000d0       0x34 ./source/Drivers/Security_Layer/aes.o
  .ARM.attributes
-                0x00000104       0x34 ./source/Drivers/crc.o
+                0x00000104       0x34 ./source/Drivers/Security_Layer/crc.o
  .ARM.attributes
                 0x00000138       0x34 ./source/enet_txrx_transfer.o
  .ARM.attributes
@@ -4347,9 +4363,9 @@ LOAD linker stubs
  .debug_frame   0x00000000       0x30 ./utilities/fsl_assert.o
  .debug_frame   0x00000030      0x1f8 ./utilities/fsl_debug_console.o
  .debug_frame   0x00000228      0xa4c ./startup/startup_mk66f18.o
- .debug_frame   0x00000c74       0x98 ./source/Drivers/Security.o
- .debug_frame   0x00000d0c      0x308 ./source/Drivers/aes.o
- .debug_frame   0x00001014       0x58 ./source/Drivers/crc.o
+ .debug_frame   0x00000c74       0x98 ./source/Drivers/Security_Layer/Security.o
+ .debug_frame   0x00000d0c      0x308 ./source/Drivers/Security_Layer/aes.o
+ .debug_frame   0x00001014       0x58 ./source/Drivers/Security_Layer/crc.o
  .debug_frame   0x0000106c       0x2c ./source/enet_txrx_transfer.o
  .debug_frame   0x00001098       0x20 ./source/semihost_hardfault.o
  .debug_frame   0x000010b8      0x1bc ./drivers/fsl_crc.o
@@ -4415,18 +4431,18 @@ ADC0_DriverIRQHandler                             ./startup/startup_mk66f18.o
 ADC0_IRQHandler                                   ./startup/startup_mk66f18.o
 ADC1_DriverIRQHandler                             ./startup/startup_mk66f18.o
 ADC1_IRQHandler                                   ./startup/startup_mk66f18.o
-AES_CBC_decrypt_buffer                            ./source/Drivers/aes.o
-                                                  ./source/Drivers/Security.o
-AES_CBC_encrypt_buffer                            ./source/Drivers/aes.o
-                                                  ./source/Drivers/Security.o
-AES_CTR_xcrypt_buffer                             ./source/Drivers/aes.o
-AES_ECB_decrypt                                   ./source/Drivers/aes.o
-AES_ECB_encrypt                                   ./source/Drivers/aes.o
-AES_ctx_set_iv                                    ./source/Drivers/aes.o
-                                                  ./source/Drivers/Security.o
-AES_init_ctx                                      ./source/Drivers/aes.o
-AES_init_ctx_iv                                   ./source/Drivers/aes.o
-                                                  ./source/Drivers/Security.o
+AES_CBC_decrypt_buffer                            ./source/Drivers/Security_Layer/aes.o
+                                                  ./source/Drivers/Security_Layer/Security.o
+AES_CBC_encrypt_buffer                            ./source/Drivers/Security_Layer/aes.o
+                                                  ./source/Drivers/Security_Layer/Security.o
+AES_CTR_xcrypt_buffer                             ./source/Drivers/Security_Layer/aes.o
+AES_ECB_decrypt                                   ./source/Drivers/Security_Layer/aes.o
+AES_ECB_encrypt                                   ./source/Drivers/Security_Layer/aes.o
+AES_ctx_set_iv                                    ./source/Drivers/Security_Layer/aes.o
+                                                  ./source/Drivers/Security_Layer/Security.o
+AES_init_ctx                                      ./source/Drivers/Security_Layer/aes.o
+AES_init_ctx_iv                                   ./source/Drivers/Security_Layer/aes.o
+                                                  ./source/Drivers/Security_Layer/Security.o
 BOARD_BootClockHSRUN                              ./board/clock_config.o
 BOARD_BootClockRUN                                ./board/clock_config.o
 BOARD_BootClockVLPR                               ./board/clock_config.o
@@ -4478,7 +4494,7 @@ CLOCK_GetFlashClkFreq                             ./drivers/fsl_clock.o
 CLOCK_GetFlexBusClkFreq                           ./drivers/fsl_clock.o
 CLOCK_GetFllFreq                                  ./drivers/fsl_clock.o
 CLOCK_GetFreq                                     ./drivers/fsl_clock.o
-                                                  ./source/Drivers/enet.o
+                                                  ./source/Drivers/Ethernet_Layer/enet.o
 CLOCK_GetInternalRefClkFreq                       ./drivers/fsl_clock.o
 CLOCK_GetMode                                     ./drivers/fsl_clock.o
 CLOCK_GetOsc0ErClkDivFreq                         ./drivers/fsl_clock.o
@@ -4526,18 +4542,18 @@ CMP3_DriverIRQHandler                             ./startup/startup_mk66f18.o
 CMP3_IRQHandler                                   ./startup/startup_mk66f18.o
 CMT_DriverIRQHandler                              ./startup/startup_mk66f18.o
 CMT_IRQHandler                                    ./startup/startup_mk66f18.o
-CRC32_GetChecksum                                 ./source/Drivers/crc.o
-                                                  ./source/Drivers/Security.o
-CRC32_Init                                        ./source/Drivers/crc.o
-                                                  ./source/Drivers/Security.o
+CRC32_GetChecksum                                 ./source/Drivers/Security_Layer/crc.o
+                                                  ./source/Drivers/Security_Layer/Security.o
+CRC32_Init                                        ./source/Drivers/Security_Layer/crc.o
+                                                  ./source/Drivers/Security_Layer/Security.o
 CRC_Get16bitResult                                ./drivers/fsl_crc.o
 CRC_Get32bitResult                                ./drivers/fsl_crc.o
-                                                  ./source/Drivers/crc.o
+                                                  ./source/Drivers/Security_Layer/crc.o
 CRC_GetDefaultConfig                              ./drivers/fsl_crc.o
 CRC_Init                                          ./drivers/fsl_crc.o
-                                                  ./source/Drivers/crc.o
+                                                  ./source/Drivers/Security_Layer/crc.o
 CRC_WriteData                                     ./drivers/fsl_crc.o
-                                                  ./source/Drivers/crc.o
+                                                  ./source/Drivers/Security_Layer/crc.o
 DAC0_DriverIRQHandler                             ./startup/startup_mk66f18.o
 DAC0_IRQHandler                                   ./startup/startup_mk66f18.o
 DAC1_DriverIRQHandler                             ./startup/startup_mk66f18.o
@@ -4591,7 +4607,7 @@ ENET_1588_Timer_DriverIRQHandler                  ./drivers/fsl_enet.o
 ENET_1588_Timer_IRQHandler                        ./startup/startup_mk66f18.o
 ENET_AddMulticastGroup                            ./drivers/fsl_enet.o
 ENET_CommonFrame0IRQHandler                       ./drivers/fsl_enet.o
-ENET_Config                                       ./source/Drivers/enet.o
+ENET_Config                                       ./source/Drivers/Ethernet_Layer/enet.o
 ENET_Deinit                                       ./drivers/fsl_enet.o
 ENET_Down                                         ./drivers/fsl_enet.o
 ENET_DriverIRQHandler                             ./drivers/fsl_enet.o
@@ -4601,33 +4617,33 @@ ENET_Error_DriverIRQHandler                       ./drivers/fsl_enet.o
                                                   ./startup/startup_mk66f18.o
 ENET_Error_IRQHandler                             ./startup/startup_mk66f18.o
 ENET_GetDefaultConfig                             ./drivers/fsl_enet.o
-                                                  ./source/Drivers/enet.o
+                                                  ./source/Drivers/Ethernet_Layer/enet.o
 ENET_GetInstance                                  ./drivers/fsl_enet.o
                                                   ./mdio/fsl_enet_mdio.o
 ENET_GetMacAddr                                   ./drivers/fsl_enet.o
 ENET_GetRxBuffer                                  ./drivers/fsl_enet.o
 ENET_GetRxErrBeforeReadFrame                      ./drivers/fsl_enet.o
-                                                  ./source/Drivers/enet.o
+                                                  ./source/Drivers/Ethernet_Layer/enet.o
 ENET_GetRxFrame                                   ./drivers/fsl_enet.o
 ENET_GetRxFrameSize                               ./drivers/fsl_enet.o
-                                                  ./source/Drivers/enet.o
+                                                  ./source/Drivers/Ethernet_Layer/enet.o
 ENET_GetStatistics                                ./drivers/fsl_enet.o
 ENET_Init                                         ./drivers/fsl_enet.o
-                                                  ./source/Drivers/enet.o
+                                                  ./source/Drivers/Ethernet_Layer/enet.o
 ENET_LeaveMulticastGroup                          ./drivers/fsl_enet.o
 ENET_Ptp1588IRQHandler                            ./drivers/fsl_enet.o
 ENET_ReadFrame                                    ./drivers/fsl_enet.o
-                                                  ./source/Drivers/enet.o
+                                                  ./source/Drivers/Ethernet_Layer/enet.o
 ENET_ReceiveIRQHandler                            ./drivers/fsl_enet.o
 ENET_Receive_DriverIRQHandler                     ./drivers/fsl_enet.o
                                                   ./startup/startup_mk66f18.o
 ENET_Receive_IRQHandler                           ./startup/startup_mk66f18.o
 ENET_ReclaimTxDescriptor                          ./drivers/fsl_enet.o
 ENET_ReleaseRxBuffer                              ./drivers/fsl_enet.o
-ENET_Rx                                           ./source/Drivers/enet.o
+ENET_Rx                                           ./source/Drivers/Ethernet_Layer/enet.o
 ENET_RxIRQHandler                                 ./drivers/fsl_enet.o
 ENET_SendFrame                                    ./drivers/fsl_enet.o
-                                                  ./source/Drivers/enet.o
+                                                  ./source/Drivers/Ethernet_Layer/enet.o
 ENET_SendFrameZeroCopy                            ./drivers/fsl_enet.o
 ENET_SetCallback                                  ./drivers/fsl_enet.o
 ENET_SetErrISRHandler                             ./drivers/fsl_enet.o
@@ -4653,7 +4669,7 @@ ENET_TransmitIRQHandler                           ./drivers/fsl_enet.o
 ENET_Transmit_DriverIRQHandler                    ./drivers/fsl_enet.o
                                                   ./startup/startup_mk66f18.o
 ENET_Transmit_IRQHandler                          ./startup/startup_mk66f18.o
-ENET_Tx                                           ./source/Drivers/enet.o
+ENET_Tx                                           ./source/Drivers/Ethernet_Layer/enet.o
 ENET_TxIRQHandler                                 ./drivers/fsl_enet.o
 ENET_Up                                           ./drivers/fsl_enet.o
 FLASH_Erase                                       ./drivers/fsl_ftfx_flash.o
@@ -4891,13 +4907,13 @@ SYSMPU_SetRegionAddr                              ./drivers/fsl_sysmpu.o
 SYSMPU_SetRegionConfig                            ./drivers/fsl_sysmpu.o
 SYSMPU_SetRegionRwMasterAccessRights              ./drivers/fsl_sysmpu.o
 SYSMPU_SetRegionRwxMasterAccessRights             ./drivers/fsl_sysmpu.o
-Security_Decrypt                                  ./source/Drivers/Security.o
+Security_Decrypt                                  ./source/Drivers/Security_Layer/Security.o
                                                   ./source/enet_txrx_transfer.o
-Security_Encrypt                                  ./source/Drivers/Security.o
+Security_Encrypt                                  ./source/Drivers/Security_Layer/Security.o
                                                   ./source/enet_txrx_transfer.o
-Security_MakeChecksum                             ./source/Drivers/Security.o
+Security_MakeChecksum                             ./source/Drivers/Security_Layer/Security.o
                                                   ./source/enet_txrx_transfer.o
-Security_init                                     ./source/Drivers/Security.o
+Security_init                                     ./source/Drivers/Security_Layer/Security.o
                                                   ./source/enet_txrx_transfer.o
 SysTick_Handler                                   ./startup/startup_mk66f18.o
 SystemCoreClock                                   ./device/system_MK66F18.o
@@ -5027,7 +5043,7 @@ __assertion_failed                                ./utilities/fsl_assert.o
                                                   ./drivers/fsl_clock.o
                                                   ./mdio/fsl_enet_mdio.o
                                                   ./phy/fsl_phyksz8081.o
-                                                  ./source/Drivers/enet.o
+                                                  ./source/Drivers/Ethernet_Layer/enet.o
 __bhs_ldivmod1                                    C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard\libcr_eabihelpers.a(division_64.o)
 __bss_section_table_end                           ./startup/startup_mk66f18.o
 __check_heap_overflow                             C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_cr_check_heap.o)
@@ -5090,12 +5106,12 @@ buffer2                                           ./source/enet_txrx_transfer.o
 buffer3                                           ./source/enet_txrx_transfer.o
 calloc                                            C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(alloc.o)
 checksum                                          ./source/enet_txrx_transfer.o
-ctx                                               ./source/Drivers/Security.o
+ctx                                               ./source/Drivers/Security_Layer/Security.o
 data_init                                         ./startup/startup_mk66f18.o
-duplex                                            ./source/Drivers/enet.o
-eErrStatic                                        ./source/Drivers/enet.o
+duplex                                            ./source/Drivers/Ethernet_Layer/enet.o
+eErrStatic                                        ./source/Drivers/Ethernet_Layer/enet.o
 enet_ops                                          ./mdio/fsl_enet_mdio.o
-                                                  ./source/Drivers/enet.o
+                                                  ./source/Drivers/Ethernet_Layer/enet.o
 errno                                             C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(errno.o)
                                                   C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(ftell.o)
                                                   C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_cr_sbrk.o)
@@ -5109,30 +5125,30 @@ fmc_flash_prefetch_speculation_clear              ./drivers/fsl_ftfx_cache.o
 free                                              C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(alloc.o)
                                                   C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fclose.o)
                                                   ./drivers/fsl_common.o
-                                                  ./source/Drivers/enet.o
+                                                  ./source/Drivers/Ethernet_Layer/enet.o
 fseek                                             C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fseek.o)
                                                   C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_deferredlazyseek.o)
                                                   C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_do_fflush.o)
                                                   C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(_fdopen.o)
 ftell                                             C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(ftell.o)
                                                   C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fseek.o)
-g_frame                                           ./source/Drivers/enet.o
-g_handle                                          ./source/Drivers/enet.o
+g_frame                                           ./source/Drivers/Ethernet_Layer/enet.o
+g_handle                                          ./source/Drivers/Ethernet_Layer/enet.o
 g_pfnVectors                                      ./startup/startup_mk66f18.o
-g_rxBuffDescrip                                   ./source/Drivers/enet.o
-g_rxDataBuff                                      ./source/Drivers/enet.o
-g_txBuffDescrip                                   ./source/Drivers/enet.o
-g_txDataBuff                                      ./source/Drivers/enet.o
+g_rxBuffDescrip                                   ./source/Drivers/Ethernet_Layer/enet.o
+g_rxDataBuff                                      ./source/Drivers/Ethernet_Layer/enet.o
+g_txBuffDescrip                                   ./source/Drivers/Ethernet_Layer/enet.o
+g_txDataBuff                                      ./source/Drivers/Ethernet_Layer/enet.o
 g_xtal0Freq                                       ./drivers/fsl_clock.o
                                                   ./board/clock_config.o
 g_xtal32Freq                                      ./drivers/fsl_clock.o
-length                                            ./source/Drivers/enet.o
-link                                              ./source/Drivers/enet.o
+length                                            ./source/Drivers/Ethernet_Layer/enet.o
+link                                              ./source/Drivers/Ethernet_Layer/enet.o
 main                                              ./source/enet_txrx_transfer.o
                                                   C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_nohost_nf.a(_cr__main.o)
 malloc                                            C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(alloc.o)
                                                   ./drivers/fsl_common.o
-                                                  ./source/Drivers/enet.o
+                                                  ./source/Drivers/Ethernet_Layer/enet.o
 mcgConfig_BOARD_BootClockHSRUN                    ./board/clock_config.o
 mcgConfig_BOARD_BootClockRUN                      ./board/clock_config.o
 mcgConfig_BOARD_BootClockVLPR                     ./board/clock_config.o
@@ -5141,9 +5157,9 @@ memcpy                                            C:/nxp/MCUXpressoIDE_11.10.0_3
                                                   ./drivers/fsl_ftfx_controller.o
                                                   ./drivers/fsl_ftfx_cache.o
                                                   ./drivers/fsl_enet.o
-                                                  ./source/Drivers/enet.o
-                                                  ./source/Drivers/aes.o
-                                                  ./source/Drivers/Security.o
+                                                  ./source/Drivers/Ethernet_Layer/enet.o
+                                                  ./source/Drivers/Security_Layer/aes.o
+                                                  ./source/Drivers/Security_Layer/Security.o
                                                   ./utilities/fsl_debug_console.o
 memset                                            C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(memset.o)
                                                   C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fclose.o)
@@ -5157,9 +5173,9 @@ memset                                            C:/nxp/MCUXpressoIDE_11.10.0_3
 oscConfig_BOARD_BootClockHSRUN                    ./board/clock_config.o
 oscConfig_BOARD_BootClockRUN                      ./board/clock_config.o
 oscConfig_BOARD_BootClockVLPR                     ./board/clock_config.o
-phyConfig                                         ./source/Drivers/enet.o
+phyConfig                                         ./source/Drivers/Ethernet_Layer/enet.o
 phyksz8081_ops                                    ./phy/fsl_phyksz8081.o
-                                                  ./source/Drivers/enet.o
+                                                  ./source/Drivers/Ethernet_Layer/enet.o
 realloc                                           C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(alloc.o)
 remove                                            C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(remove.o)
                                                   C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(fclose.o)
@@ -5177,8 +5193,8 @@ setvbuf                                           C:/nxp/MCUXpressoIDE_11.10.0_3
 simConfig_BOARD_BootClockHSRUN                    ./board/clock_config.o
 simConfig_BOARD_BootClockRUN                      ./board/clock_config.o
 simConfig_BOARD_BootClockVLPR                     ./board/clock_config.o
-speed                                             ./source/Drivers/enet.o
-status                                            ./source/Drivers/enet.o
+speed                                             ./source/Drivers/Ethernet_Layer/enet.o
+status                                            ./source/Drivers/Ethernet_Layer/enet.o
 strlen                                            C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(strlen.o)
                                                   C:/nxp/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libcr_c.a(remove.o)
                                                   ./utilities/fsl_debug_console.o
