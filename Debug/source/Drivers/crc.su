@@ -1,0 +1,2 @@
+../source/Drivers/crc.c:16:6:CRC32_Init	32	static
+../source/Drivers/crc.c:32:10:CRC32_GetChecksum	16	static

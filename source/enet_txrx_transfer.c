@@ -301,13 +301,17 @@ int main(void)
 //uint8_t buffer2[32];
 //uint8_t buffer3[32];
 //
+//uint32_t checksum;
+//
 //int main (void){
 //	Security_init();
 //	buffer1[31] = '0';
 //
-//	Security_send(buffer1, buffer2);
+//	Security_Encrypt(buffer1, buffer2);
 //
-//	Security_receive(buffer2, buffer3);
+//	Security_Decrypt(buffer2, buffer3);
+//
+//	Security_MakeChecksum(buffer3, &checksum);
 //
 //	while(1);
 //}

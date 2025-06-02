@@ -12,4 +12,8 @@
 
 #define AES128_KEY "My16byteKey00000"
 
+#define BUFFER_SIZE 32
+
+#define CRC32_SEED 0xFFFFFFFF
+
 #endif /* DRIVERS_SECURITY_CFG_H_ */
