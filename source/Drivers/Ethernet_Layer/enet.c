@@ -156,6 +156,19 @@ static void ENET_BuildBroadCastFrame(uint8_t* g_ownMAC_Addr, uint8_t* g_pcMAC_Ad
     memcpy(&g_frame[14], g_data, dataSize);
 }
 
+static bool ENET_CheckMAC(uint8_t* MAC1, uint8_t* MAC2){
+	bool equal = false;
+	for (uint8_t i = 0; i < 6; ++i) {
+		if(MAC1[i] == MAC2[i]){
+			equal = true;
+		}
+		else{
+			equal = false;
+		}
+	}
+	return equal;
+}
+
 status_t ENET_Config(uint8_t* g_ownMAC_Addr){
 	enet_config_t config;
 
@@ -247,8 +260,12 @@ status_t ENET_Rx(uint8_t* g_ownMAC_Addr, uint8_t* g_pcMAC_Addr, uint8_t* g_rxBuf
 		status        = ENET_ReadFrame(ENET, &g_handle, data, length, 0, NULL);
 		if (status == kStatus_Success)
 		{
-
-			memcpy(g_rxBuffer, data, length);
+			if(ENET_CheckMAC(data,g_ownMAC_Addr)){
+				memcpy(g_rxBuffer, data, length);
+			}
+			else{
+				status = kStatus_Fail;
+			}
 		}
 		free(data);
 	}

@@ -92,6 +92,27 @@ uint32_t checksum;
 status_t st = kStatus_Fail;
 bool v_chksum = false;
 
+void PRINT_BufferString(uint8_t* buffer){
+	uint8_t i = 0;
+	while(buffer[i] != 0){
+		PRINTF("%c",buffer[i]);
+		i++;
+	}
+	PRINTF("\r\n");
+}
+
+void PRINT_BufferHex(uint8_t* buffer){
+	uint8_t i = 0;
+	while(i < MAX_BUFFER_SIZE){
+		if(buffer[i] <= 0xF){
+			PRINTF("0");
+		}
+		PRINTF("%X,",buffer[i]);
+		i++;
+	}
+	PRINTF("\r\n");
+}
+
 int main (void){
 	BOARD_InitBootPins();
 	BOARD_InitBootClocks();
@@ -102,6 +123,11 @@ int main (void){
 
 	uint8_t i = 0;
 	while(1){
+	    memset(enc_tx_msg, 0x00, MAX_BUFFER_SIZE);
+	    memset(buffer_TX, 0x00, MAX_BUFFER_SIZE);
+	    memset(enc_rx_msg, 0x00, MAX_BUFFER_SIZE);
+		memset(buffer_RX, 0x00, MAX_BUFFER_SIZE);
+
 		Security_Encrypt((uint8_t*)messages[i], enc_tx_msg);
 		Security_AddChecksum(enc_tx_msg, buffer_TX);
 		Ethernet_TX(buffer_TX);
@@ -111,13 +137,26 @@ int main (void){
 		} while (st != kStatus_Success);
 
 		v_chksum = Security_ValidChecksum(buffer_RX, enc_rx_msg);
-		if(!v_chksum){
+		if(v_chksum){
 			Security_Decrypt(enc_rx_msg, dec_rx_msg);
-			PRINTF("%s\r\n",dec_rx_msg);
 		}
 		else{
 			PRINTF("checksum failed\r\n");
 		}
+
+		PRINTF("Message TX Buffer : ");
+		PRINT_BufferString((uint8_t*)messages[i]);
+		PRINTF("Encoded TX Buffer : ");
+		PRINT_BufferHex(enc_tx_msg);
+		PRINTF("Ethernet TX Buffer: ");
+		PRINT_BufferHex(buffer_TX);
+
+		PRINTF("Ethernet RX Buffer: ");
+		PRINT_BufferHex(buffer_RX);
+		PRINTF("Encoded RX Buffer : ");
+		PRINT_BufferHex(enc_rx_msg);
+		PRINTF("Decoded RXBuffer  : ");
+		PRINT_BufferString(dec_rx_msg);
 
 		i++;
 	}
