@@ -8,12 +8,23 @@
 
 struct AES_ctx ctx;
 
-static size_t GetBufferSize(uint8_t* buffer){
+static size_t GetBufferSize(const uint8_t* buffer) {
 	size_t count = 0;
-	while(buffer[count] != 0){
-		count++;
+
+	if (buffer == NULL) {
+		return 0;
 	}
-	return count;
+
+	while (buffer != NULL) {
+		if (buffer[count] != 0x00 && buffer[count + 1] != 0x00) {
+			count++;
+		}
+		else{
+			break;
+		}
+	}
+
+	return count+1;
 }
 
 static void AdjustPadding(uint8_t* buffer) {
