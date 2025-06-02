@@ -1,9 +1,7 @@
-source/enet_txrx_transfer.o source/enet_txrx_transfer.d: \
- ../source/enet_txrx_transfer.c \
- ../source/Drivers/Security_Layer/Security.h \
- C:\Redes\Practica1_Enet_Layered_SW\source/Drivers/Security_Layer/aes.h \
- C:\Redes\Practica1_Enet_Layered_SW\source/Drivers/Security_Layer/crc.h \
- C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_crc.h \
+source/Test_App.o source/Test_App.d: ../source/Test_App.c \
+ C:\Redes\Practica1_Enet_Layered_SW\board/pin_mux.h \
+ C:\Redes\Practica1_Enet_Layered_SW\board/board.h \
+ C:\Redes\Practica1_Enet_Layered_SW\board/clock_config.h \
  C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_common.h \
  C:\Redes\Practica1_Enet_Layered_SW\device/fsl_device_registers.h \
  C:\Redes\Practica1_Enet_Layered_SW\device/MK66F18.h \
@@ -15,15 +13,21 @@ source/enet_txrx_transfer.o source/enet_txrx_transfer.d: \
  C:\Redes\Practica1_Enet_Layered_SW\device/MK66F18_features.h \
  C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_common_arm.h \
  C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_clock.h \
+ C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_common.h \
+ C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_gpio.h \
+ C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_port.h \
+ C:\Redes\Practica1_Enet_Layered_SW\utilities/fsl_debug_console.h \
+ ../source/Drivers/Security_Layer/Security.h \
+ C:\Redes\Practica1_Enet_Layered_SW\source/Drivers/Security_Layer/aes.h \
+ C:\Redes\Practica1_Enet_Layered_SW\source/Drivers/Security_Layer/crc.h \
+ C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_crc.h \
  C:\Redes\Practica1_Enet_Layered_SW\source/Drivers/Security_Layer/Security_cfg.h \
  ../source/Drivers/Ethernet_Layer/Ethernet.h \
  ../source/Drivers/Ethernet_Layer/Ethernet_cfg.h \
- ../source/Drivers/Ethernet_Layer/enet.h \
- C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_common.h
-../source/Drivers/Security_Layer/Security.h:
-C:\Redes\Practica1_Enet_Layered_SW\source/Drivers/Security_Layer/aes.h:
-C:\Redes\Practica1_Enet_Layered_SW\source/Drivers/Security_Layer/crc.h:
-C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_crc.h:
+ ../source/Drivers/Ethernet_Layer/enet.h
+C:\Redes\Practica1_Enet_Layered_SW\board/pin_mux.h:
+C:\Redes\Practica1_Enet_Layered_SW\board/board.h:
+C:\Redes\Practica1_Enet_Layered_SW\board/clock_config.h:
 C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_common.h:
 C:\Redes\Practica1_Enet_Layered_SW\device/fsl_device_registers.h:
 C:\Redes\Practica1_Enet_Layered_SW\device/MK66F18.h:
@@ -35,8 +39,15 @@ C:\Redes\Practica1_Enet_Layered_SW\device/system_MK66F18.h:
 C:\Redes\Practica1_Enet_Layered_SW\device/MK66F18_features.h:
 C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_common_arm.h:
 C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_clock.h:
+C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_common.h:
+C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_gpio.h:
+C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_port.h:
+C:\Redes\Practica1_Enet_Layered_SW\utilities/fsl_debug_console.h:
+../source/Drivers/Security_Layer/Security.h:
+C:\Redes\Practica1_Enet_Layered_SW\source/Drivers/Security_Layer/aes.h:
+C:\Redes\Practica1_Enet_Layered_SW\source/Drivers/Security_Layer/crc.h:
+C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_crc.h:
 C:\Redes\Practica1_Enet_Layered_SW\source/Drivers/Security_Layer/Security_cfg.h:
 ../source/Drivers/Ethernet_Layer/Ethernet.h:
 ../source/Drivers/Ethernet_Layer/Ethernet_cfg.h:
 ../source/Drivers/Ethernet_Layer/enet.h:
-C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_common.h:

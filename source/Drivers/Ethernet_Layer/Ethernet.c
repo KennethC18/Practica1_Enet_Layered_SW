@@ -24,7 +24,7 @@ status_t Ethernet_TX(uint8_t* buffer){
 status_t Ethernet_RX(uint8_t* buffer){
 	status_t status = kStatus_Fail;
 
-	ENET_Rx(ownMAC, pcMAC, buffer, DATA_SIZE);
+	status = ENET_Rx(ownMAC, pcMAC, buffer, DATA_SIZE);
 
 	return status;
 }

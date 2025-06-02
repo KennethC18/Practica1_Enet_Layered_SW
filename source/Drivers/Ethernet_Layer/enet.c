@@ -247,6 +247,7 @@ status_t ENET_Rx(uint8_t* g_ownMAC_Addr, uint8_t* g_pcMAC_Addr, uint8_t* g_rxBuf
 		status        = ENET_ReadFrame(ENET, &g_handle, data, length, 0, NULL);
 		if (status == kStatus_Success)
 		{
+
 			memcpy(g_rxBuffer, data, length);
 		}
 		free(data);
