@@ -5,7 +5,7 @@
  * Generated linker script file for MK66FN2M0xxx18
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v11.10.0 [Build 3148] [2024-07-03] on 2 jun. 2025 02:30:23
+ * MCUXpresso IDE v11.10.0 [Build 3148] [2024-07-03] on 2 jun. 2025 15:22:26
  */
 
 INCLUDE "Practica1_Enet_Layered_SW_Debug_library.ld"
@@ -93,7 +93,6 @@ SECTIONS
         PROVIDE(__start_data_SRAM_LOWER = .) ;
         *(.ramfunc.$RAM2)
         *(.ramfunc.$SRAM_LOWER)
-       *(NonCacheable.init)
         *(.data.$RAM2)
         *(.data.$SRAM_LOWER)
         *(.data.$RAM2.*)
@@ -154,7 +153,6 @@ SECTIONS
     {
        PROVIDE(__start_bss_RAM2 = .) ;
        PROVIDE(__start_bss_SRAM_LOWER = .) ;
-       *(NonCacheable)
        *(.bss.$RAM2)
        *(.bss.$SRAM_LOWER)
        *(.bss.$RAM2.*)
