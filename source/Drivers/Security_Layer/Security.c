@@ -29,7 +29,15 @@ void Security_Decrypt(uint8_t* in_buffer, uint8_t* out_buffer){
 	AES_CBC_decrypt_buffer(&ctx, out_buffer, BUFFER_SIZE);
 }
 
-void Security_MakeChecksum(uint8_t* buffer, uint32_t* checksum){
-	*checksum = CRC32_GetChecksum(buffer, BUFFER_SIZE);
+void Security_AddChecksum(uint8_t* in_buffer, uint8_t* out_buffer){
+	uint32_t checksum;
+
+	memcpy(out_buffer, in_buffer, BUFFER_SIZE);
+
+	checksum = CRC32_GetChecksum(in_buffer, BUFFER_SIZE);
+
+	for (uint8_t i = BUFFER_SIZE; i < (BUFFER_SIZE + 4); ++i) {
+		out_buffer[i] = (uint8_t)(checksum >> (8 * (i - BUFFER_SIZE)) & (0xFF));
+	}
 }
 

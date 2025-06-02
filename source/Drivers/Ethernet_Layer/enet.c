@@ -47,7 +47,7 @@ uint8_t g_frame[ENET_DATA_LENGTH + 14];
 static mdio_handle_t mdioHandle = {.ops = &MDIO_OPS};
 static phy_handle_t phyHandle   = {.phyAddr = PHY_ADDRESS, .mdioHandle = &mdioHandle, .ops = &PHY_OPS};
 
-status_t status;
+static status_t status;
 phy_config_t phyConfig = {0};
 phy_speed_t speed;
 phy_duplex_t duplex;

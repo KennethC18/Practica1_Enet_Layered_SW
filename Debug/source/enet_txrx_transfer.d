@@ -16,6 +16,8 @@ source/enet_txrx_transfer.o source/enet_txrx_transfer.d: \
  C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_common_arm.h \
  C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_clock.h \
  C:\Redes\Practica1_Enet_Layered_SW\source/Drivers/Security_Layer/Security_cfg.h \
+ ../source/Drivers/Ethernet_Layer/Ethernet.h \
+ ../source/Drivers/Ethernet_Layer/Ethernet_cfg.h \
  ../source/Drivers/Ethernet_Layer/enet.h \
  C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_common.h
 ../source/Drivers/Security_Layer/Security.h:
@@ -34,5 +36,7 @@ C:\Redes\Practica1_Enet_Layered_SW\device/MK66F18_features.h:
 C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_common_arm.h:
 C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_clock.h:
 C:\Redes\Practica1_Enet_Layered_SW\source/Drivers/Security_Layer/Security_cfg.h:
+../source/Drivers/Ethernet_Layer/Ethernet.h:
+../source/Drivers/Ethernet_Layer/Ethernet_cfg.h:
 ../source/Drivers/Ethernet_Layer/enet.h:
 C:\Redes\Practica1_Enet_Layered_SW\drivers/fsl_common.h:

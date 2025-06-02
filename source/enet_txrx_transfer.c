@@ -295,7 +295,7 @@
 
 
 #include "Drivers/Security_Layer/Security.h"
-#include "Drivers/Ethernet_Layer/enet.h"
+#include "Drivers/Ethernet_Layer/Ethernet.h"
 
 uint8_t buffer1[32] = "No todo lo que es oro reluce...";
 
@@ -304,15 +304,19 @@ uint8_t buffer3[32];
 
 uint32_t checksum;
 
+uint8_t ethbuffer[36];
+
 int main (void){
 	Security_init();
+	Ethernet_Init();
+
 	buffer1[31] = '0';
 
 	Security_Encrypt(buffer1, buffer2);
 
 	Security_Decrypt(buffer2, buffer3);
 
-	Security_MakeChecksum(buffer3, &checksum);
+	Security_AddChecksum(buffer3, ethbuffer);
 
 	while(1);
 }

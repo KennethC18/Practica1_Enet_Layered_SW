@@ -19,6 +19,6 @@ void Security_Encrypt(uint8_t* in_buffer, uint8_t* out_buffer);
 
 void Security_Decrypt(uint8_t* in_buffer, uint8_t* out_buffer);
 
-void Security_MakeChecksum();
+void Security_AddChecksum(uint8_t* in_buffer, uint8_t* out_buffer);
 
 #endif /* DRIVERS_SECURITY_H_ */
