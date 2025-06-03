@@ -123,6 +123,14 @@ int main (void){
 	while(1){
 		Security_Encrypt((uint8_t*)messages[i], enc_tx_msg);
 		Security_AddChecksum(enc_tx_msg, buffer_TX);
+
+		PRINTF("Message TX Buffer : ");
+		PRINT_BufferString((uint8_t*)messages[i]);
+		PRINTF("Encoded TX Buffer : ");
+		PRINT_BufferHex(enc_tx_msg);
+		PRINTF("Ethernet TX Buffer: ");
+		PRINT_BufferHex(buffer_TX);
+
 		Ethernet_TX(buffer_TX);
 
 		do {
@@ -137,12 +145,12 @@ int main (void){
 			PRINTF("Checksum failed\r\n");
 		}
 
-		PRINTF("Message TX Buffer : ");
-		PRINT_BufferString((uint8_t*)messages[i]);
-		PRINTF("Encoded TX Buffer : ");
-		PRINT_BufferHex(enc_tx_msg);
-		PRINTF("Ethernet TX Buffer: ");
-		PRINT_BufferHex(buffer_TX);
+//		PRINTF("Message TX Buffer : ");
+//		PRINT_BufferString((uint8_t*)messages[i]);
+//		PRINTF("Encoded TX Buffer : ");
+//		PRINT_BufferHex(enc_tx_msg);
+//		PRINTF("Ethernet TX Buffer: ");
+//		PRINT_BufferHex(buffer_TX);
 
 		PRINTF("Ethernet RX Buffer: ");
 		PRINT_BufferHex(buffer_RX);
