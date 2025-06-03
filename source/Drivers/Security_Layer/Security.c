@@ -33,18 +33,26 @@ static size_t GetArraySize(uint8_t* buffer){
 	return count+1;
 }
 
-static void AdjustPadding(uint8_t* buffer) {
+static void BufferAddPadding(uint8_t* buffer) {
     size_t bufSize = GetBufferSize(buffer);
 
-    size_t padding_len = AES_BLOCK_SIZE - (bufSize % AES_BLOCK_SIZE);
+    size_t padding_len = AES_BLOCKLEN - (bufSize % AES_BLOCKLEN);
 
     // For PKCS#5/PKCS#7, always add padding (even if bufSize is a multiple of 16)
     // If bufSize % 16 == 0, add a full block (16 bytes, each 0x10)
     if (padding_len == 0) {
-        padding_len = AES_BLOCK_SIZE;
+        padding_len = AES_BLOCKLEN;
     }
 
     memset(buffer + bufSize, (uint8_t)padding_len, padding_len);
+}
+
+static void BufferRemovePadding(uint8_t* buffer) {
+	size_t bufSize = GetBufferSize(buffer);
+
+	size_t padding_len = buffer[bufSize - 1];
+
+	memset(&buffer[bufSize - padding_len], 0x00, padding_len);
 }
 
 void Security_init(){
@@ -57,7 +65,7 @@ void Security_Encrypt(uint8_t* in_buffer, uint8_t* out_buffer){
 
 	memcpy(out_buffer, in_buffer, bufSize);
 
-	AdjustPadding(out_buffer);
+	BufferAddPadding(out_buffer);
 
 	AES_ctx_set_iv(&ctx, (uint8_t *)AES128_IV);
 
@@ -72,6 +80,8 @@ void Security_Decrypt(uint8_t* in_buffer, uint8_t* out_buffer){
 	AES_ctx_set_iv(&ctx, (uint8_t *)AES128_IV);
 
 	AES_CBC_decrypt_buffer(&ctx, out_buffer, bufSize);
+
+	BufferRemovePadding(out_buffer);
 }
 
 void Security_AddChecksum(uint8_t* in_buffer, uint8_t* out_buffer){

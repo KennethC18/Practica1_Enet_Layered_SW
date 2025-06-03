@@ -80,17 +80,15 @@ char* responses[] = {
     RSP16
 };
 
-uint8_t enc_tx_msg[MAX_BUFFER_SIZE];
-uint8_t buffer_TX[MAX_BUFFER_SIZE];
+uint8_t enc_tx_msg[MAX_BUFFER_SIZE] = {0};
+uint8_t buffer_TX[MAX_BUFFER_SIZE] = {0};
 
-uint8_t buffer_RX[MAX_BUFFER_SIZE];
-uint8_t enc_rx_msg[MAX_BUFFER_SIZE];
-uint8_t dec_rx_msg[MAX_BUFFER_SIZE];
+uint8_t buffer_RX[MAX_BUFFER_SIZE] = {0};
+uint8_t enc_rx_msg[MAX_BUFFER_SIZE] = {0};
+uint8_t dec_rx_msg[MAX_BUFFER_SIZE] = {0};
 
-uint32_t checksum;
-
-status_t st = kStatus_Fail;
-bool v_chksum = false;
+status_t valid_packet = kStatus_Fail;
+bool valid_chksum = false;
 
 void PRINT_BufferString(uint8_t* buffer){
 	uint8_t i = 0;
@@ -123,25 +121,20 @@ int main (void){
 
 	uint8_t i = 0;
 	while(1){
-	    memset(enc_tx_msg, 0x00, MAX_BUFFER_SIZE);
-	    memset(buffer_TX, 0x00, MAX_BUFFER_SIZE);
-	    memset(enc_rx_msg, 0x00, MAX_BUFFER_SIZE);
-		memset(buffer_RX, 0x00, MAX_BUFFER_SIZE);
-
 		Security_Encrypt((uint8_t*)messages[i], enc_tx_msg);
 		Security_AddChecksum(enc_tx_msg, buffer_TX);
 		Ethernet_TX(buffer_TX);
 
 		do {
-			st = Ethernet_RX(buffer_RX);
-		} while (st != kStatus_Success);
+			valid_packet = Ethernet_RX(buffer_RX);
+		} while (valid_packet != kStatus_Success);
 
-		v_chksum = Security_ValidChecksum(buffer_RX, enc_rx_msg);
-		if(v_chksum){
+		valid_chksum = Security_ValidChecksum(buffer_RX, enc_rx_msg);
+		if(valid_chksum){
 			Security_Decrypt(enc_rx_msg, dec_rx_msg);
 		}
 		else{
-			PRINTF("checksum failed\r\n");
+			PRINTF("Checksum failed\r\n");
 		}
 
 		PRINTF("Message TX Buffer : ");
@@ -157,6 +150,12 @@ int main (void){
 		PRINT_BufferHex(enc_rx_msg);
 		PRINTF("Decoded RXBuffer  : ");
 		PRINT_BufferString(dec_rx_msg);
+
+		memset(enc_tx_msg, 0x00, MAX_BUFFER_SIZE);
+		memset(buffer_TX, 0x00, MAX_BUFFER_SIZE);
+		memset(enc_rx_msg, 0x00, MAX_BUFFER_SIZE);
+		memset(buffer_RX, 0x00, MAX_BUFFER_SIZE);
+		memset(dec_rx_msg, 0x00, MAX_BUFFER_SIZE);
 
 		i++;
 	}
