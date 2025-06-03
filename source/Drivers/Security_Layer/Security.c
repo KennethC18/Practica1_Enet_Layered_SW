@@ -8,20 +8,26 @@
 
 struct AES_ctx ctx;
 
-static size_t GetBufferSize(const uint8_t* buffer) {
+static size_t GetBufferSize(uint8_t* buffer) {
 	size_t count = 0;
 
-	if (buffer == NULL) {
-		return 0;
-	}
-
-	while (buffer != NULL) {
-		if (buffer[count] != 0x00 && buffer[count + 1] != 0x00) {
-			count++;
-		}
-		else{
+	while (1) {
+		if (buffer[count] == 0x00 && buffer[count + 1] == 0x00) {
 			break;
 		}
+		else{
+			count++;
+		}
+	}
+
+	return count;
+}
+
+static size_t GetArraySize(uint8_t* buffer){
+	size_t count = 0;
+
+	while (buffer[count] != 0) {
+		count++;
 	}
 
 	return count+1;
@@ -47,7 +53,7 @@ void Security_init(){
 }
 
 void Security_Encrypt(uint8_t* in_buffer, uint8_t* out_buffer){
-    size_t bufSize = GetBufferSize(in_buffer);
+    size_t bufSize = GetArraySize(in_buffer);
 
 	memcpy(out_buffer, in_buffer, bufSize);
 
