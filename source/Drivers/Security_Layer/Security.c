@@ -11,8 +11,8 @@ struct AES_ctx ctx;
 static size_t GetBufferSize(uint8_t* buffer) {
 	size_t count = 0;
 
-	while (1) {
-		if (buffer[count] == 0x00 && buffer[count + 1] == 0x00) {
+	while (count + 2 < 80) {
+		if (buffer[count] == 0x00 && buffer[count + 1] == 0x00 && buffer[count + 2] == 0x00) {
 			break;
 		}
 		else{
@@ -89,7 +89,7 @@ void Security_AddChecksum(uint8_t* in_buffer, uint8_t* out_buffer){
 }
 
 bool Security_ValidChecksum(uint8_t* in_buffer, uint8_t* out_buffer){
-    size_t bufSize = GetBufferSize(in_buffer);
+    size_t bufSize = GetBufferSize(in_buffer) - 4;
 
 	bool retval = false;
 	uint32_t rx_checksum = 0;

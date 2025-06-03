@@ -261,7 +261,7 @@ status_t ENET_Rx(uint8_t* g_ownMAC_Addr, uint8_t* g_pcMAC_Addr, uint8_t* g_rxBuf
 		if (status == kStatus_Success)
 		{
 			if(ENET_CheckMAC(data,g_ownMAC_Addr)){
-				memcpy(g_rxBuffer, data, length);
+				memcpy(g_rxBuffer, &data[14], length - 14);
 			}
 			else{
 				status = kStatus_Fail;

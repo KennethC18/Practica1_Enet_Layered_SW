@@ -10,7 +10,7 @@
 /*!
  * @brief      Init for CRC-32.
  * @details    Init CRC peripheral module for CRC-32 protocol.
- *             width=32 poly=0x04c11db7 init=0xffffffff refin=true refout=true xorout=0xffffffff check=0xcbf43926
+ *             width=32 poly=0x04c11db7 init=0xffffffff refin=true refout=true xorout=0xffffffff
  * @parameters seed
  */
 void CRC32_Init(uint32_t seed){
