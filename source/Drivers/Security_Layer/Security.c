@@ -11,7 +11,7 @@ struct AES_ctx ctx;
 static size_t GetBufferSize(uint8_t* buffer) {
 	size_t count = 0;
 
-	while (count + 2 < 80) {
+	while (count + 2 < MAX_BUFFER_SIZE) {
 		if (buffer[count] == 0x00 && buffer[count + 1] == 0x00 && buffer[count + 2] == 0x00) {
 			break;
 		}

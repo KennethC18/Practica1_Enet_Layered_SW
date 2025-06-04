@@ -12,7 +12,7 @@
 
 #define AES128_KEY "My16byteKey00000"
 
-#define BUFFER_SIZE 32
+#define MAX_BUFFER_SIZE 100
 
 #define CRC32_SEED 0xFFFFFFFF
 

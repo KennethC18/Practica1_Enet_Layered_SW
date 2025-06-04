@@ -40,7 +40,7 @@
 #define RSP15 "...cuidado con el Anillo."
 #define RSP16 "...se despertará."
 
-#define MAX_BUFFER_SIZE 80
+#define MAX_BUFFER_SIZE 100
 
 char* messages[] = {
     MSG1,
@@ -119,16 +119,20 @@ int main (void){
 	Security_init();
 	Ethernet_Init();
 
+	SDK_DelayAtLeastUs(100000, BOARD_BOOTCLOCKRUN_CORE_CLOCK);
+
 	uint8_t i = 0;
 	while(1){
+//		SDK_DelayAtLeastUs(1000000, BOARD_BOOTCLOCKRUN_CORE_CLOCK);
+
 		Security_Encrypt((uint8_t*)messages[i], enc_tx_msg);
 		Security_AddChecksum(enc_tx_msg, buffer_TX);
 
-		PRINTF("Message %d TX Buffer : ",i);
+		PRINTF("Message %d TX Buffer : ",i+1);
 		PRINT_BufferString((uint8_t*)messages[i]);
-//		PRINTF("Encoded TX Buffer : ");
+//		PRINTF("Encoded TX Buffer    : ");
 //		PRINT_BufferHex(enc_tx_msg);
-//		PRINTF("Ethernet TX Buffer: ");
+//		PRINTF("Ethernet TX Buffer   : ");
 //		PRINT_BufferHex(buffer_TX);
 
 		Ethernet_TX(buffer_TX);
@@ -145,18 +149,11 @@ int main (void){
 			PRINTF("Checksum failed\r\n");
 		}
 
-//		PRINTF("Message TX Buffer : ");
-//		PRINT_BufferString((uint8_t*)messages[i]);
-//		PRINTF("Encoded TX Buffer : ");
-//		PRINT_BufferHex(enc_tx_msg);
-//		PRINTF("Ethernet TX Buffer: ");
-//		PRINT_BufferHex(buffer_TX);
-
-//		PRINTF("Ethernet RX Buffer: ");
+//		PRINTF("Ethernet RX Buffer   : ");
 //		PRINT_BufferHex(buffer_RX);
-//		PRINTF("Encoded RX Buffer : ");
+//		PRINTF("Encoded RX Buffer    : ");
 //		PRINT_BufferHex(enc_rx_msg);
-		PRINTF("Decoded RXBuffer  : ");
+		PRINTF("Decoded RXBuffer     : ");
 		PRINT_BufferString(dec_rx_msg);
 
 		memset(enc_tx_msg, 0x00, MAX_BUFFER_SIZE);
@@ -165,6 +162,12 @@ int main (void){
 		memset(buffer_RX, 0x00, MAX_BUFFER_SIZE);
 		memset(dec_rx_msg, 0x00, MAX_BUFFER_SIZE);
 
-		i++;
+		if(i == 15){
+			PRINTF("Todos los han sido transmitidos\n\r");
+			while(1);
+		}
+		else{
+			i++;
+		}
 	}
 }
