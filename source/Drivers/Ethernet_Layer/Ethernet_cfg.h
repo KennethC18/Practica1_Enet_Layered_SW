@@ -13,10 +13,6 @@
 //#define PC_MAC_ADDRESS {0x10,0x62,0xe5,0xe1,0x01,0x06};
 #define PC_MAC_ADDRESS {0x18, 0xC0, 0x4D, 0xB3, 0x70, 0x46}
 
-#define BUFFER_SIZE 32
-
-#define CHECKSUM_SIZE 4
-
-#define DATA_SIZE BUFFER_SIZE + CHECKSUM_SIZE
+#define DATA_SIZE 80
 
 #endif /* DRIVERS_ETHERNET_CFG_H_ */

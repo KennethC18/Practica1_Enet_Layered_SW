@@ -124,12 +124,12 @@ int main (void){
 		Security_Encrypt((uint8_t*)messages[i], enc_tx_msg);
 		Security_AddChecksum(enc_tx_msg, buffer_TX);
 
-		PRINTF("Message TX Buffer : ");
+		PRINTF("Message %d TX Buffer : ",i);
 		PRINT_BufferString((uint8_t*)messages[i]);
-		PRINTF("Encoded TX Buffer : ");
-		PRINT_BufferHex(enc_tx_msg);
-		PRINTF("Ethernet TX Buffer: ");
-		PRINT_BufferHex(buffer_TX);
+//		PRINTF("Encoded TX Buffer : ");
+//		PRINT_BufferHex(enc_tx_msg);
+//		PRINTF("Ethernet TX Buffer: ");
+//		PRINT_BufferHex(buffer_TX);
 
 		Ethernet_TX(buffer_TX);
 
@@ -152,10 +152,10 @@ int main (void){
 //		PRINTF("Ethernet TX Buffer: ");
 //		PRINT_BufferHex(buffer_TX);
 
-		PRINTF("Ethernet RX Buffer: ");
-		PRINT_BufferHex(buffer_RX);
-		PRINTF("Encoded RX Buffer : ");
-		PRINT_BufferHex(enc_rx_msg);
+//		PRINTF("Ethernet RX Buffer: ");
+//		PRINT_BufferHex(buffer_RX);
+//		PRINTF("Encoded RX Buffer : ");
+//		PRINT_BufferHex(enc_rx_msg);
 		PRINTF("Decoded RXBuffer  : ");
 		PRINT_BufferString(dec_rx_msg);
 
